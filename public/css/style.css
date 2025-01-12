@@ -1,0 +1,54 @@
+.submenu {
+    display: none;
+  }
+  
+  /* Show submenu when the parent list item is hovered */
+  .group:hover .submenu {
+    display: block;
+  }
+  
+  /* Optional: Add a nice transition effect */
+  .submenu {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .submenu a {
+    text-decoration: none;
+  }
+
+  .submenu-show{
+    width: 208px !important;
+  }
+  /* Hide menu by default for mobile screens */
+#nav-menu ul {
+  display: none;
+  flex-direction: column; /* Stack items vertically */
+  background-color: white;
+  position: absolute;
+  top: 64px;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Show menu when active */
+#nav-menu.active ul {
+  display: flex;
+}
+
+/* For larger screens, show the menu by default */
+@media (min-width: 1024px) {
+  #nav-menu ul {
+    display: flex;
+    flex-direction: row; /* Align items horizontally */
+    position: static;
+    box-shadow: none;
+    background-color: transparent;
+  }
+}
+
+.nav-mobile{
+  left: 0;
+  top: 72px;
+}
