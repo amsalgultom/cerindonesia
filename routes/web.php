@@ -17,4 +17,6 @@ Route::middleware(['setLocale'])->group(function () {
     Route::get('/');
     Route::get('/{lang}', [FrontendController::class, 'home'])->name('home');
     Route::get('/{lang}/who-we-are', [FrontendController::class, 'whoWeAre'])->name('who-we-are');
+    Route::get('/{lang}/services', [FrontendController::class, 'services'])->name('services');
+    Route::get('/{lang}/contact-us', [FrontendController::class, 'contactUs'])->name('contact-us');
 });

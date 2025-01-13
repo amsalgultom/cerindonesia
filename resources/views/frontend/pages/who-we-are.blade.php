@@ -343,6 +343,19 @@
             </div>
         </div>
     </section>
+    <div role="dialog" id="radix-:rg:" aria-describedby="radix-:ri:" aria-labelledby="radix-:rh:" data-state="open" class="hidden fixed inset-0 z-[9999] mx-4 my-4 flex flex-col gap-4 rounded-sm bg-white p-4 shadow-md md:mx-40 md:my-44 lg:m-auto lg:aspect-[20/9] lg:h-80 lg:flex-row lg:gap-8 xl:aspect-video xl:h-96" tabindex="-1" style="pointer-events: auto;">
+        <div class="relative aspect-[5/4] shrink-0 overflow-hidden rounded-sm shadow lg:aspect-[5/7] lg:h-full"><img alt="Prof. Dr. Ir. Rizaldi Boer, MS" loading="lazy" decoding="async" data-nimg="fill" class="object-cover" sizes="100vw" srcset="/_next/image/?url=https%3A%2F%2Fcms.cerindonesia.org%2Fwp-content%2Fuploads%2F2023%2F04%2FRizaldiBoer.webp&amp;w=640&amp;q=75 640w, /_next/image/?url=https%3A%2F%2Fcms.cerindonesia.org%2Fwp-content%2Fuploads%2F2023%2F04%2FRizaldiBoer.webp&amp;w=750&amp;q=75 750w, /_next/image/?url=https%3A%2F%2Fcms.cerindonesia.org%2Fwp-content%2Fuploads%2F2023%2F04%2FRizaldiBoer.webp&amp;w=828&amp;q=75 828w, /_next/image/?url=https%3A%2F%2Fcms.cerindonesia.org%2Fwp-content%2Fuploads%2F2023%2F04%2FRizaldiBoer.webp&amp;w=1080&amp;q=75 1080w, /_next/image/?url=https%3A%2F%2Fcms.cerindonesia.org%2Fwp-content%2Fuploads%2F2023%2F04%2FRizaldiBoer.webp&amp;w=1200&amp;q=75 1200w, /_next/image/?url=https%3A%2F%2Fcms.cerindonesia.org%2Fwp-content%2Fuploads%2F2023%2F04%2FRizaldiBoer.webp&amp;w=1920&amp;q=75 1920w, /_next/image/?url=https%3A%2F%2Fcms.cerindonesia.org%2Fwp-content%2Fuploads%2F2023%2F04%2FRizaldiBoer.webp&amp;w=2048&amp;q=75 2048w, /_next/image/?url=https%3A%2F%2Fcms.cerindonesia.org%2Fwp-content%2Fuploads%2F2023%2F04%2FRizaldiBoer.webp&amp;w=3840&amp;q=75 3840w" src="/_next/image/?url=https%3A%2F%2Fcms.cerindonesia.org%2Fwp-content%2Fuploads%2F2023%2F04%2FRizaldiBoer.webp&amp;w=3840&amp;q=75" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;"></div>
+        <div class="h-full overflow-y-auto lg:py-8">
+            <div class="h-full overflow-y-auto">
+                <h2 id="radix-:rh:" class="text-xl font-bold text-primary-700">Prof. Dr. Ir. Rizaldi Boer, MS</h2>
+                <p id="radix-:ri:" class="text-primary-600 lg:text-base">CDM and Climate Change Specialist</p>
+                <p id="radix-:ri:" class="text-dark-600 lg:text-base">Tenaga Ahli</p>
+                <p id="radix-:ri:" class="mt-4 lg:mt-6 lg:h-4/6 lg:pr-4">Prof. Boer adalah pakar internasional tentang perubahan iklim. Beliau memiliki pengalaman mendalam antara lain, mengembangkan proyek-proyek perdagangan karbon, inventarisasi GRK dan studi pada pengaturan MRV di sektor kehutanan dan pertanian. Selain bekerja di Indonesia, beliau juga telah bekerja di negara lain, yaitu: Kamboja, Selandia Baru, Irlandia, Thailand, Filipina, Australia, Ukraina, India dan Laos. Selama 30 tahun bekerja, beliau telah terlibat dan menyebabkan banyak program penelitian iklim nasional dan internasional termasuk isu karbon seperti persiapan PDD untuk kegiatan menghindari deforestasi yang tidak terencana dan meningkatkan stok karbon di Areal Konservasi Meru Betiri pada tahun 2012, penilaian tingkat referensi emisi dan potensi kegiatan percontohan REDD di Kalimantan Timur pada tahun 2008, dan mengkonsolidasikan dan menyiapkan laporan REDDI (Pengurangan Emisi dari Deforestasi dan Degradasi Hutan di Indonesia) pada tahun 2007.</p>
+            </div>
+        </div><button type="button" class="absolute -right-3 -top-3 rounded-full bg-dark-200/10 p-1.5 text-black/75 backdrop-blur duration-200 hover:bg-dark-200/25 active:bg-dark-200/75 lg:right-1 lg:top-1"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="h-8 w-8">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+            </svg></button>
+    </div>
 </div>
 
 @endsection

@@ -51,8 +51,8 @@
               <!-- Dropdown menu -->
               <div class="absolute hidden group-hover:block top-10 w-full sm:w-auto pt-2 submenu-show">
                 <ul class="gap-3 rounded bg-white px-6 py-2 shadow-md">
-                  <li><a href="#" class="inline-flex px-1 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 lg:text-black lg:hover:text-primary-400 lg:focus:text-primary-400 text-base">Layanan Kami</a></li>
-                  <li><a href="#" class="inline-flex px-1 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 lg:text-black lg:hover:text-primary-400 lg:focus:text-primary-400 text-base">Proyek Kami</a></li>
+                  <li><a href="{{ route('services', ['lang' => app()->getLocale()]) }}" class="inline-flex px-1 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 lg:text-black lg:hover:text-primary-400 lg:focus:text-primary-400 text-base">Layanan Kami</a></li>
+                  <li><a href="{{ route('services', ['lang' => app()->getLocale()]) }}" class="inline-flex px-1 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 lg:text-black lg:hover:text-primary-400 lg:focus:text-primary-400 text-base">Proyek Kami</a></li>
                 </ul>
               </div>
             </li>
@@ -68,8 +68,8 @@
               <!-- Dropdown menu -->
                <div class="absolute hidden group-hover:block top-10 w-full sm:w-auto pt-2 submenu-show">
                  <ul class="gap-3 rounded bg-white px-6 py-2 shadow-md">
-                   <li><a href="#" class="inline-flex px-1 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 lg:text-black lg:hover:text-primary-400 lg:focus:text-primary-400 text-base">Hubungi Kami</a></li>
-                   <li><a href="#" class="inline-flex px-1 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 lg:text-black lg:hover:text-primary-400 lg:focus:text-primary-400 text-base">Tanya Kami</a></li>
+                   <li><a href="{{ route('contact-us', ['lang' => app()->getLocale()]) }}" class="inline-flex px-1 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 lg:text-black lg:hover:text-primary-400 lg:focus:text-primary-400 text-base">Hubungi Kami</a></li>
+                   <li><a href="{{ route('contact-us', ['lang' => app()->getLocale()]) }}" class="inline-flex px-1 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 lg:text-black lg:hover:text-primary-400 lg:focus:text-primary-400 text-base">Tanya Kami</a></li>
                  </ul>
                </div>
             </li>

@@ -15,4 +15,14 @@ class FrontendController extends Controller
     {
         return view('frontend.pages.who-we-are');
     }
+
+    public function services()
+    {
+        return view('frontend.pages.service');
+    }
+
+    public function contactUs()
+    {
+        return view('frontend.pages.contact-us');
+    }
 }
