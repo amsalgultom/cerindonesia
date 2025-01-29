@@ -2,6 +2,7 @@
 
 namespace App\Exceptions;
 
+use App\Models\Log;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Throwable;
 
@@ -42,7 +43,14 @@ class Handler extends ExceptionHandler
     public function register(): void
     {
         $this->reportable(function (Throwable $e) {
-            //
+            $user = auth()->check() ? auth()->user()->id : 'guest';
+            $now = date('Y-m-d H:i:s');
+            Log::create([
+                'url' => request()->fullUrl(),
+                'body' => request()->getContent(),
+                'message' => $e->getMessage(),
+                'created_by' => $user
+            ]);
         });
     }
 }

@@ -39,16 +39,23 @@
   <!-- Vendor JS Files -->
   <script src="{{ asset('vendor/vendor-view/aos/aos.js') }}"></script>
   <script src="{{ asset('vendor/vendor-view/swiper/swiper-bundle.min.js') }}"></script>
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="{{ asset('js/jquery-3.7.0.min.js') }}"></script>
   
   <!-- Template Main JS File -->
   <script src="{{ asset('js/main.js') }}"></script>
   
   <script>
-   function toggleLanguage() {
-        var lang = document.getElementById('language-toggle').checked ? 'id' : 'en';
-        window.location.href = '/' + lang + window.location.pathname.replace(/^\/[a-z]{2}/, '');
-    }
+   function toggleLanguage(event, lang) {
+    event.preventDefault();  // Prevent the default link behavior
+    
+    var currentPath = window.location.pathname;  // Get the current path (e.g., /en/services)
+    
+    // Replace the current language code with the new language code
+    var newPath = currentPath.replace(/^\/[a-z]{2}/, '/' + lang);
+    
+    // Redirect to the new path with the updated language
+    window.location.href = newPath;
+  }
   </script>
 
     <!-- Custom Script -->

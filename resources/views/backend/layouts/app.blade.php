@@ -23,7 +23,7 @@
     <link href="{{ asset('vendor/sweetalert/dist/sweetalert2.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/jquery.toast.min.css') }}" rel="stylesheet">
     <!-- Template Main CSS File -->
-    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/style-backend.css') }}" rel="stylesheet">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- Custom Script -->
@@ -38,10 +38,10 @@
             <span class="visually-hidden">Loading...</span>
         </div>
     </div>
-    @include('layouts.header')
-    @include('layouts.sidebar')
+    @include('backend.layouts.header')
+    @include('backend.layouts.sidebar')
     @yield('content')
-    @include('layouts.footer')
+    @include('backend.layouts.footer')
 
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
     <script src="{{ asset('js/jquery-3.7.0.min.js') }}"></script>

@@ -3,7 +3,7 @@
 
     <div class="d-flex align-items-center justify-content-between">
       <a href="{{ route('dashboard') }}" class="logo d-flex align-items-center justify-content-center">
-        <img src="{{ asset('img/logo-nusa.png') }}" style="width:120px" alt="">
+        <img src="{{ asset('images/logo-cerindo.png') }}" style="width:120px" alt="">
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->

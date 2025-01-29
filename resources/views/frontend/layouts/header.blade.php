@@ -3,11 +3,19 @@
     <div id="content-header" class="hidden border-b duration-300 group-hover:border-slate-300 lg:block border-transparent py-2">
       <div class="mx-auto max-w-7xl">
         <div class="ml-auto w-1/5">
-          <div class="flex items-center justify-end"><a title="Indonesian"
-              class="content-header-4 w-full px-4 text-center duration-300 group-hover:text-primary-600 group-hover:hover:text-primary-400 group-hover:focus:text-primary-400 text-primary-600 hover:text-primary-400 focus:text-primary-400 lg:text-primary-200 lg:hover:text-primary-400 lg:focus:text-primary-400 font-semibold text-sm"
-              href="/id/">Indonesian</a><a title="English"
-              class="content-header-5 w-full px-4 text-center duration-300 group-hover:lg:text-black group-hover:lg:hover:text-primary-600 group-hover:lg:focus:text-primary-600 lg:text-white lg:hover:text-primary-400 lg:focus:text-primary-400 text-sm"
-              href="/en/">English</a></div>
+            <div class="flex items-center justify-end">
+              @if (app()->getLocale() == 'id')
+                <a title="Indonesian" class="content-header-4 w-full px-4 text-center duration-300 group-hover:text-primary-600 group-hover:hover:text-primary-400 group-hover:focus:text-primary-400 text-primary-600 hover:text-primary-400 focus:text-primary-400 lg:text-primary-200 lg:hover:text-primary-400 lg:focus:text-primary-400 font-semibold text-sm"
+                  href="#" onclick="toggleLanguage(event, 'id')">Indonesian</a>
+                  <a title="English" class="content-header-5 w-full px-4 text-center duration-300 group-hover:lg:text-black group-hover:lg:hover:text-primary-600 group-hover:lg:focus:text-primary-600 lg:text-white lg:hover:text-primary-400 lg:focus:text-primary-400 text-sm"
+                  href="#" onclick="toggleLanguage(event, 'en')">English</a>
+              @else
+              <a title="Indonesian" class="content-header-5 w-full px-4 text-center duration-300 group-hover:lg:text-black group-hover:lg:hover:text-primary-600 group-hover:lg:focus:text-primary-600 lg:text-white lg:hover:text-primary-400 lg:focus:text-primary-400 text-sm"
+                  href="#" onclick="toggleLanguage(event, 'id')">Indonesian</a>
+                  <a title="English" class="content-header-4 w-full px-4 text-center duration-300 group-hover:text-primary-600 group-hover:hover:text-primary-400 group-hover:focus:text-primary-400 text-primary-600 hover:text-primary-400 focus:text-primary-400 lg:text-primary-200 lg:hover:text-primary-400 lg:focus:text-primary-400 font-semibold text-sm"
+                  href="#" onclick="toggleLanguage(event, 'en')">English</a>
+              @endif
+              </div>
         </div>
       </div>
     </div>
@@ -118,19 +126,19 @@
                 
                 <!-- Language Switcher -->
                 <div class="-mx-2" role="none">
-                  <div class="flex items-center justify-start" role="none">
-                    
-                    <!-- Indonesian Link -->
-                    <a title="Indonesian" class="w-full px-4 text-center duration-300 group-hover:text-primary-600 group-hover:hover:text-primary-400 group-hover:focus:text-primary-400 text-primary-600 hover:text-primary-400 focus:text-primary-400 lg:text-primary-200 lg:hover:text-primary-400 lg:focus:text-primary-400 font-semibold text-sm" href="/id/who-we-are/" role="none">
-                      Indonesian
-                    </a>
-                    
-                    <!-- English Link -->
-                    <a title="English" class="w-full px-4 text-center duration-300 group-hover:lg:text-black group-hover:lg:hover:text-primary-600 group-hover:lg:focus:text-primary-600 lg:text-white lg:hover:text-primary-400 lg:focus:text-primary-400 text-sm" href="/en/who-we-are/" role="none">
-                      English
-                    </a>
-                  </div>
+                <div class="flex items-center justify-start" role="none">
+                  
+                  <!-- Indonesian Link -->
+                  <a title="Indonesian" class="w-full px-4 text-center duration-300 group-hover:text-primary-600 group-hover:hover:text-primary-400 group-hover:focus:text-primary-400 text-primary-600 hover:text-primary-400 focus:text-primary-400 lg:text-primary-200 lg:hover:text-primary-400 lg:focus:text-primary-400 font-semibold text-sm" href="#" onclick="toggleLanguage(event, 'id')" role="none">
+                    Indonesian
+                  </a>
+                  
+                  <!-- English Link -->
+                  <a title="English" class="w-full px-4 text-center duration-300 group-hover:lg:text-black group-hover:lg:hover:text-primary-600 group-hover:lg:focus:text-primary-600 lg:text-white lg:hover:text-primary-400 lg:focus:text-primary-400 text-sm" href="#" onclick="toggleLanguage(event, 'en')" role="none">
+                    English
+                  </a>
                 </div>
+              </div>
               </div>
             </div>
           </nav>

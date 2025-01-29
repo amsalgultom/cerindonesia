@@ -1,5 +1,5 @@
-@extends('layouts.auth')
-@section('title', 'Nusa-Advocates | 503')
+@extends('backend.layouts.auth')
+@section('title', 'Cerindo | 503')
 
 @section('content')
 <main>
