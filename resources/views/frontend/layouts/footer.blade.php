@@ -38,9 +38,9 @@
           <ul class="mt-6 space-y-4 lg:mt-3 lg:space-y-2">
             <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="{{ route('services', ['lang' => app()->getLocale()]) }}">@lang('messages.menu.layanan_kami')</a></li>
             <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="{{ route('services', ['lang' => app()->getLocale()]) }}#map-of-projects">@lang('messages.menu.peta_proyek')</a></li>
-            <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="{{ route('services', ['lang' => app()->getLocale()]) }}#international-clients">@lang('messages.menu.klien_internasional')</a>
+            <li><a class="internasional-link text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="{{ route('services', ['lang' => app()->getLocale()]) }}#international-clients">@lang('messages.menu.klien_internasional')</a>
             </li>
-            <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="{{ route('services', ['lang' => app()->getLocale()]) }}#national-clients">@lang('messages.menu.klien_nasional')</a></li>
+            <li><a class="nasional-link text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="{{ route('services', ['lang' => app()->getLocale()]) }}#national-clients">@lang('messages.menu.klien_nasional')</a></li>
           </ul>
         </div>
         <div>
