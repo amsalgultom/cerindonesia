@@ -11,25 +11,25 @@
       </li>
       <li class="nav-item">
         <a class="nav-link {{ (request()->segment(2) == 'banner') ? '' : 'collapsed' }}" href="{{ route('banner.index') }}">
-          <i class="bi bi-grid"></i>
+          <i class="bi bi-upc-scan"></i>
           <span>Banner</span>
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link {{ (request()->segment(2) == 'team') ? '' : 'collapsed' }}" href="{{ route('team.index') }}">
-          <i class="bi bi-grid"></i>
+          <i class="bi bi-person-bounding-box"></i>
           <span>Team</span>
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link {{ (request()->segment(2) == 'service') ? '' : 'collapsed' }}" href="{{ route('service.index') }}">
-          <i class="bi bi-grid"></i>
+          <i class="bi bi-patch-check-fill"></i>
           <span>Service</span>
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link {{ (request()->segment(2) == 'client') ? '' : 'collapsed' }}" href="{{ route('client.index') }}">
-          <i class="bi bi-grid"></i>
+          <i class="bi bi-people-fill"></i>
           <span>Client</span>
         </a>
       </li>
