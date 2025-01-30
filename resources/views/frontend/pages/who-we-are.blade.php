@@ -55,11 +55,11 @@
                                     class="flex w-[calc(100%_*_(1/1))] grow-0 flex-col items-center justify-center overflow-hidden text-left mm:w-[calc(100%_*_(1/2))] sm:w-[calc(100%_*_(1/2))] md:w-[calc(100%_*_(1/3))] lg:w-[calc(100%_*_(1/4))] xl:w-[calc(100%_*_(1/5))]"
                                     data-name="{{ $team->name }}" 
                                     data-specialist="{{ $team->specialist }}" 
-                                    data-image="{{ asset('storage/team').'/'.$team->image }}" 
+                                    data-image="{{ url('storage/team').'/'.$team->image }}" 
                                     data-description="{{ app()->getLocale() == 'en' ? $team->description_en : $team->description_id }}">
                                     
                                     <div class="group relative aspect-3/4 h-full w-full">
-                                        <img alt="{{ $team->name }}" loading="lazy" decoding="async" class="object-cover grayscale duration-300 group-hover:scale-105 group-hover:lg:grayscale-0" sizes="100vw" src="{{ asset('storage/team').'/'.$team->image }}" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;">
+                                        <img alt="{{ $team->name }}" loading="lazy" decoding="async" class="object-cover grayscale duration-300 group-hover:scale-105 group-hover:lg:grayscale-0" sizes="100vw" src="{{ url('storage/team').'/'.$team->image }}" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;">
                                         <div class="absolute bottom-0 h-3/4 w-full bg-gradient-to-t from-black"></div>
                                         <div class="absolute bottom-0 p-4">
                                             <h3 id="name_val" class="bottom-0 line-clamp-2 text-xl font-semibold text-white drop-shadow-xl md:text-base">
@@ -103,10 +103,10 @@
                                     class="flex w-[calc(100%_*_(1/1))] grow-0 flex-col items-center justify-center overflow-hidden text-left mm:w-[calc(100%_*_(1/2))] sm:w-[calc(100%_*_(1/2))] md:w-[calc(100%_*_(1/3))] lg:w-[calc(100%_*_(1/4))] xl:w-[calc(100%_*_(1/5))]"
                                     data-name="{{ $team->name }}" 
                                     data-specialist="{{ $team->specialist }}" 
-                                    data-image="{{ asset('storage/team').'/'.$team->image }}" 
+                                    data-image="{{ url('storage/team').'/'.$team->image }}" 
                                     data-description="{{ app()->getLocale() == 'en' ? $team->description_en : $team->description_id }}">
 
-                                    <div class="group relative aspect-3/4 h-full w-full"><img alt="{{ $team->name }}" loading="lazy" decoding="async" data-nimg="fill" class="object-cover grayscale duration-300 group-hover:scale-105 group-hover:lg:grayscale-0" sizes="100vw" src="{{ asset('storage/team').'/'.$team->image }}" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;">
+                                    <div class="group relative aspect-3/4 h-full w-full"><img alt="{{ $team->name }}" loading="lazy" decoding="async" data-nimg="fill" class="object-cover grayscale duration-300 group-hover:scale-105 group-hover:lg:grayscale-0" sizes="100vw" src="{{ url('storage/team').'/'.$team->image }}" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;">
                                         <div class="absolute bottom-0 h-3/4 w-full bg-gradient-to-t from-black"></div>
                                         <div class="absolute bottom-0 p-4">
                                             <h3 class="bottom-0 line-clamp-2 text-xl font-semibold text-white drop-shadow-xl md:text-base">

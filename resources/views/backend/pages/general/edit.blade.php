@@ -88,7 +88,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <a href="{{ asset('storage/general') }}/{{$general->value_file}}" target="_blank">File Upload Link</a>
+                <a href="{{ url('storage/general') }}/{{$general->value_file}}" target="_blank">File Upload Link</a>
             </div>
         </div>
     </div>

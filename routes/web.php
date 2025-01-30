@@ -9,6 +9,7 @@ use App\Http\Controllers\Auth\LoginRegisterController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\FrontendController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Storage;
 
 /*
 |--------------------------------------------------------------------------
@@ -88,4 +89,15 @@ Route::middleware(['auth'])->group(function () {
         Route::put('/admin/client/update/{client}', 'update')->name('client.update');
         Route::post('/admin/client/delete', 'delete')->name('client.delete');
     });
+});
+
+Route::get('storage/{filename}', function ($filename) {
+    // Make sure to validate the filename to avoid path traversal vulnerabilities
+    $filePath = storage_path('app/public/' . $filename);
+
+    if (file_exists($filePath)) {
+        return response()->file($filePath);
+    }
+
+    abort(404, 'File not found');
 });

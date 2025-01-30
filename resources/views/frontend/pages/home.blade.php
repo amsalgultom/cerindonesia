@@ -10,7 +10,7 @@
             <div class="swiper-slide">
                 <a href="#">
                     <div class="relative h-full bg-primary-900">
-                        <img alt="" class="absolute inset-0 w-full h-full object-cover" src="{{ asset('storage/banner/'.$banner->image) }}">
+                        <img alt="" class="absolute inset-0 w-full h-full object-cover" src="{{ url('storage/banner/'.$banner->image) }}">
                         <div class="absolute inset-0 flex items-center justify-center bg-gradient-to-t from-black/50 to-black/20 text-white">
                             <h1 class="px-12 text-3xl font-bold md:px-20 md:text-4xl md:leading-tight lg:px-40 xl:px-80">{{ $banner->title_id }}</h1>
                         </div>
@@ -68,7 +68,7 @@
                 @foreach ($services as $service)
                     <div class="group flex gap-4">
                         <div class="relative mt-1.5 inline-flex h-12 w-12 shrink-0 items-center justify-center rounded bg-primary-600/40 p-2.5 shadow-lg shadow-primary-900/20 duration-200 group-hover:bg-primary-500/50 group-hover:shadow-primary-900/10 md:h-16 md:w-16 md:p-4">
-                            <img alt="service icon" loading="lazy" width="128" height="128" decoding="async" data-nimg="1" style="color:transparent" src="{{ asset('storage/service/'.$service->image) }}">
+                            <img alt="service icon" loading="lazy" width="128" height="128" decoding="async" data-nimg="1" style="color:transparent" src="{{ url('storage/service/'.$service->image) }}">
                             <span class="absolute -right-1 -top-1 hidden h-1/3 w-1/3 rounded-full bg-primary-400 opacity-50 group-hover:inline-flex group-hover:animate-ping"></span>
                         </div>
                         <div class="">

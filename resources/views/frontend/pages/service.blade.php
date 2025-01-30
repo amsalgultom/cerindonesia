@@ -28,7 +28,7 @@
                         <div class="absolute inset-0 -z-10 m-auto bg-primary-400/20 backdrop-blur-lg"></div>
                         <div class="flex gap-4">
                             <div class="relative mt-1.5 inline-flex h-12 w-12 shrink-0 items-center justify-center rounded bg-primary-600/40 p-2.5 shadow-lg shadow-primary-900/20 duration-200 group-hover:bg-primary-500/50 group-hover:shadow-primary-900/10 md:h-16 md:w-16 md:p-4">
-                                <img alt="service icon" loading="lazy" width="128" height="128" decoding="async" data-nimg="1" src="{{ asset('storage/service').'/'.$service->image }}" style="color: transparent;"><span class="absolute -right-1 -top-1 hidden h-1/3 w-1/3 rounded-full bg-primary-400 opacity-50 group-hover:inline-flex group-hover:animate-ping"></span>
+                                <img alt="service icon" loading="lazy" width="128" height="128" decoding="async" data-nimg="1" src="{{ url('storage/service').'/'.$service->image }}" style="color: transparent;"><span class="absolute -right-1 -top-1 hidden h-1/3 w-1/3 rounded-full bg-primary-400 opacity-50 group-hover:inline-flex group-hover:animate-ping"></span>
                             </div>
                             <div class="text-left">
                                 <h3 class="text-lg font-semibold text-dark-800">{{ app()->getLocale() == 'en' ? $service->title_en : $service->title_id }}</h3>
@@ -84,7 +84,7 @@
                                                 @if($client->category == 'Nasional' && $count < ceil(count($clients) / 2)) <!-- First half of clients -->
                                                     <div class="swiper-slide" style="width: 101.868px; margin-right: 10px;" role="group" aria-label="{{ $count + 1 }} / {{ count($clients) }}">
                                                         <div class="relative aspect-square h-full w-full">
-                                                            <img alt="" loading="lazy" decoding="async" data-nimg="fill" class="object-contain" sizes="100vw" src="{{ asset('storage/client').'/'.$client->image }}" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;">
+                                                            <img alt="" loading="lazy" decoding="async" data-nimg="fill" class="object-contain" sizes="100vw" src="{{ url('storage/client').'/'.$client->image }}" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;">
                                                         </div>
                                                     </div>
                                                     @php $count++; @endphp
@@ -104,7 +104,7 @@
                                                 @if($client->category == 'Nasional' && $count >= ceil(count($clients) / 2)) <!-- Second half of clients -->
                                                     <div class="swiper-slide" style="width: 101.868px; margin-right: 10px;" role="group" aria-label="{{ $count + 1 }} / {{ count($clients) }}">
                                                         <div class="relative aspect-square h-full w-full">
-                                                            <img alt="" loading="lazy" decoding="async" data-nimg="fill" class="object-contain" sizes="100vw" src="{{ asset('storage/client').'/'.$client->image }}" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;">
+                                                            <img alt="" loading="lazy" decoding="async" data-nimg="fill" class="object-contain" sizes="100vw" src="{{ url('storage/client').'/'.$client->image }}" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;">
                                                         </div>
                                                     </div>
                                                     @php $count++; @endphp
@@ -133,7 +133,7 @@
                                                 @if($client->category == 'Internasional' && $count < ceil(count($clients) / 3)) <!-- First third of clients -->
                                                     <div class="swiper-slide" style="width: 101.868px; margin-right: 10px;" role="group" aria-label="{{ $count + 1 }} / {{ count($clients) }}">
                                                         <div class="relative aspect-square h-full w-full">
-                                                            <img alt="" loading="lazy" decoding="async" data-nimg="fill" class="object-contain" sizes="100vw" src="{{ asset('storage/client').'/'.$client->image }}" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;">
+                                                            <img alt="" loading="lazy" decoding="async" data-nimg="fill" class="object-contain" sizes="100vw" src="{{ url('storage/client').'/'.$client->image }}" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;">
                                                         </div>
                                                     </div>
                                                     @php $count++; @endphp
@@ -153,7 +153,7 @@
                                                 @if($client->category == 'Internasional' && $count >= ceil(count($clients) / 3) && $count < ceil(count($clients) * 2 / 3)) <!-- Second third of clients -->
                                                     <div class="swiper-slide" style="width: 101.868px; margin-right: 10px;" role="group" aria-label="{{ $count + 1 }} / {{ count($clients) }}">
                                                         <div class="relative aspect-square h-full w-full">
-                                                            <img alt="" loading="lazy" decoding="async" data-nimg="fill" class="object-contain" sizes="100vw" src="{{ asset('storage/client').'/'.$client->image }}" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;">
+                                                            <img alt="" loading="lazy" decoding="async" data-nimg="fill" class="object-contain" sizes="100vw" src="{{ url('storage/client').'/'.$client->image }}" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;">
                                                         </div>
                                                     </div>
                                                     @php $count++; @endphp
@@ -173,7 +173,7 @@
                                                 @if($client->category == 'Internasional' && $count >= ceil(count($clients) * 2 / 3)) <!-- Last third of clients -->
                                                     <div class="swiper-slide" style="width: 101.868px; margin-right: 10px;" role="group" aria-label="{{ $count + 1 }} / {{ count($clients) }}">
                                                         <div class="relative aspect-square h-full w-full">
-                                                            <img alt="" loading="lazy" decoding="async" data-nimg="fill" class="object-contain" sizes="100vw" src="{{ asset('storage/client').'/'.$client->image }}" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;">
+                                                            <img alt="" loading="lazy" decoding="async" data-nimg="fill" class="object-contain" sizes="100vw" src="{{ url('storage/client').'/'.$client->image }}" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;">
                                                         </div>
                                                     </div>
                                                     @php $count++; @endphp
