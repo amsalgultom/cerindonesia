@@ -2,7 +2,7 @@
   <div class="mx-auto h-full max-w-7xl px-4">
     <div class="grid grid-cols-2 gap-x-12 gap-y-16 md:col-span-3 lg:grid-cols-5">
       <div class="col-span-2 md:col-span-3 lg:col-span-2 lg:pr-8">
-        <div class="w-fit"><a title="Logo CER Indonesia" class="flex" href="https://www.cerindonesia.org/id/"><img alt="Logo CER Indonesia" loading="lazy" width="256" height="256" decoding="async" data-nimg="1" class="h-20 w-auto -translate-x-4" style="color:transparent" src="{{ asset('images/logo-cerindo-footer.png') }}"></a>
+        <div class="w-fit"><a title="Logo CER Indonesia" class="flex" href="{{ route('home', ['lang' => app()->getLocale()]) }}"><img alt="Logo CER Indonesia" loading="lazy" width="256" height="256" decoding="async" data-nimg="1" class="h-20 w-auto -translate-x-4" style="color:transparent" src="{{ asset('images/logo-cerindo-footer.png') }}"></a>
         </div>
         <p class="mt-7 text-base leading-relaxed text-dark-300">@lang('messages.footer')</p>
         <ul class="mt-9 flex items-center space-x-3">
@@ -20,35 +20,35 @@
         <div>
           <p class="text-sm font-bold uppercase tracking-widest text-primary-400">CER Indonesia</p>
           <ul class="mt-6 space-y-4 lg:mt-3 lg:space-y-2">
-            <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="https://www.cerindonesia.org/id/">@lang('messages.menu.beranda')</a></li>
-            <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="https://www.cerindonesia.org/id/who-we-are/">@lang('messages.menu.siapa_kami')</a></li>
-            <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="https://www.cerindonesia.org/id/services/">@lang('messages.menu.layanan')</a></li>
+            <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="{{ route('home', ['lang' => app()->getLocale()]) }}">@lang('messages.menu.beranda')</a></li>
+            <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="{{ route('who-we-are', ['lang' => app()->getLocale()]) }}">@lang('messages.menu.siapa_kami')</a></li>
+            <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="{{ route('services', ['lang' => app()->getLocale()]) }}">@lang('messages.menu.layanan')</a></li>
           </ul>
         </div>
         <div>
           <p class="text-sm font-bold uppercase tracking-widest text-primary-400">@lang('messages.menu.tentang_kami')</p>
           <ul class="mt-6 space-y-4 lg:mt-3 lg:space-y-2">
-            <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="https://www.cerindonesia.org/id/who-we-are/">@lang('messages.menu.siapa_kami')</a></li>
-            <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="https://www.cerindonesia.org/id/who-we-are/#meet-our-experts">@lang('messages.menu.temui_tenaga_ahli')</a></li>
-            <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="https://www.cerindonesia.org/id/who-we-are/#meet-our-teams">@lang('messages.menu.temui_tim_kami')</a></li>
+            <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="{{ route('who-we-are', ['lang' => app()->getLocale()]) }}">@lang('messages.menu.siapa_kami')</a></li>
+            <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="{{ route('who-we-are', ['lang' => app()->getLocale()]) }}#meet-our-experts">@lang('messages.menu.temui_tenaga_ahli')</a></li>
+            <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="{{ route('who-we-are', ['lang' => app()->getLocale()]) }}#meet-our-teams">@lang('messages.menu.temui_tim_kami')</a></li>
           </ul>
         </div>
         <div>
           <p class="text-sm font-bold uppercase tracking-widest text-primary-400">@lang('messages.menu.layanan')</p>
           <ul class="mt-6 space-y-4 lg:mt-3 lg:space-y-2">
-            <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="https://www.cerindonesia.org/id/services/">@lang('messages.menu.layanan_kami')</a></li>
-            <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="https://www.cerindonesia.org/id/services/#map-of-projects">@lang('messages.menu.peta_proyek')</a></li>
-            <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="https://www.cerindonesia.org/id/services/#international-clients">@lang('messages.menu.klien_internasional')</a>
+            <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="{{ route('services', ['lang' => app()->getLocale()]) }}">@lang('messages.menu.layanan_kami')</a></li>
+            <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="{{ route('services', ['lang' => app()->getLocale()]) }}#map-of-projects">@lang('messages.menu.peta_proyek')</a></li>
+            <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="{{ route('services', ['lang' => app()->getLocale()]) }}#international-clients">@lang('messages.menu.klien_internasional')</a>
             </li>
-            <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="https://www.cerindonesia.org/id/services/#national-clients">@lang('messages.menu.klien_nasional')</a></li>
+            <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="{{ route('services', ['lang' => app()->getLocale()]) }}#national-clients">@lang('messages.menu.klien_nasional')</a></li>
           </ul>
         </div>
         <div>
-          <p class="text-sm font-bold uppercase tracking-widest text-primary-400">@lang('messages.menu.help')</p>
+          <p class="text-sm font-bold uppercase tracking-widest text-primary-400">@lang('messages.menu.bantuan')</p>
           <ul class="mt-6 space-y-4 lg:mt-3 lg:space-y-2">
-            <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="https://www.cerindonesia.org/id/contact-us/">@lang('messages.menu.hubungi_kami') </a></li>
-            <!-- <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="https://www.cerindonesia.org/id/disclaimer/">@lang('messages.menu.siapa_kami')</a></li> -->
-            <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="https://www.cerindonesia.org/id/contact-us/#get-in-touch">@lang('messages.menu.tanya_kami')</a></li>
+            <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="{{ route('contact-us', ['lang' => app()->getLocale()]) }}">@lang('messages.menu.hubungi_kami') </a></li>
+            <!-- <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="{{ route('home', ['lang' => app()->getLocale()]) }}/disclaimer/">@lang('messages.menu.siapa_kami')</a></li> -->
+            <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="{{ route('contact-us', ['lang' => app()->getLocale()]) }}#get-in-touch">@lang('messages.menu.tanya_kami')</a></li>
           </ul>
         </div>
       </div>
@@ -58,7 +58,7 @@
       <p class="text-center text-sm text-dark-300">© Copyright
         <!-- -->2023 - 2025</p>
       <p class="text-center text-sm text-dark-300">All Rights Reserved by
-        <!-- --> <a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300 underline underline-offset-2" href="https://www.cerindonesia.org/">PT Carbon and Environmental Research (CER) INDONESIA</a></p>
+        <!-- --> <a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300 underline underline-offset-2" href="{{ route('home', ['lang' => app()->getLocale()]) }}">PT Carbon and Environmental Research (CER) INDONESIA</a></p>
     </div>
   </div>
 </section>

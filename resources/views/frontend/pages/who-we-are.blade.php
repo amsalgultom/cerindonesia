@@ -277,7 +277,7 @@
         }
 
         // Handle click event for "Tenaga Ahli"
-        $('#experts-link').click(function() {
+        $('#experts-link,#experts-link2').click(function() {
             $('#meet-our-experts').removeClass('hidden');
             $('#meet-our-teams').addClass('hidden');
             window.location.hash = '#meet-our-experts'; // Update URL hash
@@ -287,7 +287,7 @@
         });
 
         // Handle click event for "Tim Kami"
-        $('#teams-link').click(function() {
+        $('#teams-link,#teams-link2').click(function() {
             $('#meet-our-teams').removeClass('hidden');
             $('#meet-our-experts').addClass('hidden');
             window.location.hash = '#meet-our-teams'; // Update URL hash
