@@ -28,10 +28,10 @@
 <div class="relative pb-10 md:pt-10">
     <div class="sticky top-0 z-20 bg-white shadow-md">
         <div class="mx-auto flex w-full justify-evenly md:w-4/12">
-            <a id="experts-link" class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 w-full border-b-4 py-4 text-center border-b-4 border-primary-600 font-semibold text-primary-600" href="javascript:void(0)">
+            <a class="experts-link text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 w-full border-b-4 py-4 text-center border-b-4 border-primary-600 font-semibold text-primary-600" href="javascript:void(0)">
                 <span>@lang('messages.siapa_kami.tenaga_ahli')</span>
             </a>
-            <a id="teams-link" class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 w-full border-b-4 py-4 text-center border-transparent" href="javascript:void(0)">
+            <a class="teams-link text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 w-full border-b-4 py-4 text-center border-transparent" href="javascript:void(0)">
                 <span>@lang('messages.siapa_kami.tim_kami')</span>
             </a>
         </div>
@@ -267,33 +267,33 @@
         if (hash === '#meet-our-teams') {
             $('#meet-our-teams').removeClass('hidden');
             $('#meet-our-experts').addClass('hidden');
-            $('#teams-link').addClass('border-primary-600 text-primary-600').removeClass('border-transparent');
-            $('#experts-link').removeClass('border-primary-600 text-primary-600').addClass('border-transparent');
+            $('.teams-link').addClass('border-primary-600 text-primary-600').removeClass('border-transparent');
+            $('.experts-link').removeClass('border-primary-600 text-primary-600').addClass('border-transparent');
         } else {
             $('#meet-our-experts').removeClass('hidden');
             $('#meet-our-teams').addClass('hidden');
-            $('#experts-link').addClass('border-primary-600 text-primary-600').removeClass('border-transparent');
-            $('#teams-link').removeClass('border-primary-600 text-primary-600').addClass('border-transparent');
+            $('.experts-link').addClass('border-primary-600 text-primary-600').removeClass('border-transparent');
+            $('.teams-link').removeClass('border-primary-600 text-primary-600').addClass('border-transparent');
         }
 
         // Handle click event for "Tenaga Ahli"
-        $('#experts-link,#experts-link2').click(function() {
+        $('.experts-link').click(function() {
             $('#meet-our-experts').removeClass('hidden');
             $('#meet-our-teams').addClass('hidden');
             window.location.hash = '#meet-our-experts'; // Update URL hash
 
-            $('#experts-link').addClass('border-primary-600 text-primary-600').removeClass('border-transparent');
-            $('#teams-link').removeClass('border-primary-600 text-primary-600').addClass('border-transparent');
+            $('.experts-link').addClass('border-primary-600 text-primary-600').removeClass('border-transparent');
+            $('.teams-link').removeClass('border-primary-600 text-primary-600').addClass('border-transparent');
         });
 
         // Handle click event for "Tim Kami"
-        $('#teams-link,#teams-link2').click(function() {
+        $('.teams-link').click(function() {
             $('#meet-our-teams').removeClass('hidden');
             $('#meet-our-experts').addClass('hidden');
             window.location.hash = '#meet-our-teams'; // Update URL hash
 
-            $('#teams-link').addClass('border-primary-600 text-primary-600').removeClass('border-transparent');
-            $('#experts-link').removeClass('border-primary-600 text-primary-600').addClass('border-transparent');
+            $('.teams-link').addClass('border-primary-600 text-primary-600').removeClass('border-transparent');
+            $('.experts-link').removeClass('border-primary-600 text-primary-600').addClass('border-transparent');
         });
     });
 </script>

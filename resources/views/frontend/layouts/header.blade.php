@@ -42,8 +42,8 @@
                <div class="absolute hidden group-hover:block top-10 w-full sm:w-auto pt-2 submenu-show">
                  <ul class="gap-3 rounded bg-white px-6 py-2 shadow-md">
                    <li><a href="{{ route('who-we-are', ['lang' => app()->getLocale()]) }}" class="inline-flex px-1 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 lg:text-black lg:hover:text-primary-400 lg:focus:text-primary-400 text-base">@lang('messages.menu.tentang_kami')</a></li>
-                   <li><a id="experts-link2" href="{{ route('who-we-are', ['lang' => app()->getLocale()]) }}#meet-our-experts" class="inline-flex px-1 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 lg:text-black lg:hover:text-primary-400 lg:focus:text-primary-400 text-base">@lang('messages.menu.temui_tenaga_ahli')</a></li>
-                   <li><a id="teams-link2" href="{{ route('who-we-are', ['lang' => app()->getLocale()]) }}#meet-our-teams" class="inline-flex px-1 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 lg:text-black lg:hover:text-primary-400 lg:focus:text-primary-400 text-base">@lang('messages.menu.temui_tim_kami')</a></li>
+                   <li><a href="{{ route('who-we-are', ['lang' => app()->getLocale()]) }}#meet-our-experts" class="experts-link inline-flex px-1 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 lg:text-black lg:hover:text-primary-400 lg:focus:text-primary-400 text-base">@lang('messages.menu.temui_tenaga_ahli')</a></li>
+                   <li><a href="{{ route('who-we-are', ['lang' => app()->getLocale()]) }}#meet-our-teams" class="teams-link inline-flex px-1 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 lg:text-black lg:hover:text-primary-400 lg:focus:text-primary-400 text-base">@lang('messages.menu.temui_tim_kami')</a></li>
                  </ul>
                </div>
             </li>

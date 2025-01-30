@@ -10,8 +10,8 @@
   <meta content="cerindo,environmental,consultancy,company,CER Indonesia" name="keywords">
 
   <!-- Favicons -->
-  <link href="{{ asset('images/logo-cerindo.png') }}" rel="icon">
-  <link href="{{ asset('images/logo-cerindo.png') }}" rel="apple-touch-icon">
+  <link href="{{ asset('img/favicon.png') }}" rel="icon">
+  <link href="{{ asset('img/favicon.png') }}" rel="apple-touch-icon">
 
   @stack('styles')
 

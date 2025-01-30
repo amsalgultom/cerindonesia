@@ -29,8 +29,8 @@
           <p class="text-sm font-bold uppercase tracking-widest text-primary-400">@lang('messages.menu.tentang_kami')</p>
           <ul class="mt-6 space-y-4 lg:mt-3 lg:space-y-2">
             <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="{{ route('who-we-are', ['lang' => app()->getLocale()]) }}">@lang('messages.menu.siapa_kami')</a></li>
-            <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="{{ route('who-we-are', ['lang' => app()->getLocale()]) }}#meet-our-experts">@lang('messages.menu.temui_tenaga_ahli')</a></li>
-            <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="{{ route('who-we-are', ['lang' => app()->getLocale()]) }}#meet-our-teams">@lang('messages.menu.temui_tim_kami')</a></li>
+            <li><a class="experts-link text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="{{ route('who-we-are', ['lang' => app()->getLocale()]) }}#meet-our-experts">@lang('messages.menu.temui_tenaga_ahli')</a></li>
+            <li><a class="teams-link text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="{{ route('who-we-are', ['lang' => app()->getLocale()]) }}#meet-our-teams">@lang('messages.menu.temui_tim_kami')</a></li>
           </ul>
         </div>
         <div>

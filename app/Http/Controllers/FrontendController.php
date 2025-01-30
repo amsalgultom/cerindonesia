@@ -29,8 +29,36 @@ class FrontendController extends Controller
     public function services()
     {
         $services = Service::all();
-        $clients = Client::all();
-        return view('frontend.pages.service', compact('services', 'clients'));
+        $client_nasional = Client::where('category', 'Nasional')->get();
+        $client_internasional = Client::where('category', 'Internasional')->get();
+
+        $totalClients = $client_nasional->count();
+
+        // Menghitung jumlah untuk setiap bagian
+        $firstSliceLength = ceil($totalClients / 2); // Membulatkan ke atas untuk bagian pertama
+        $secondSliceLength = $totalClients - $firstSliceLength; // Sisa data untuk bagian kedua
+
+        // Memisahkan koleksi client_nasional menjadi 2 bagian
+        $client_nasional = [
+            'firstClients' => $client_nasional->slice(0, $firstSliceLength),
+            'secondClients' => $client_nasional->slice($firstSliceLength, $secondSliceLength),
+        ];
+
+        $totalinterClients = $client_internasional->count();
+
+        $firstSliceLengthI = ceil($totalinterClients / 3);
+        $remainingI = $totalinterClients - $firstSliceLengthI;
+        $secondSliceLengthI = ceil($remainingI / 2);
+        $thirdSliceLengthI = $remainingI - $secondSliceLengthI;
+
+        $client_internasional = [
+            'firstClients' => $client_internasional->slice(0, $firstSliceLengthI),
+            'secondClients' => $client_internasional->slice($firstSliceLengthI, $secondSliceLengthI),
+            'thirdClients' => $client_internasional->slice($firstSliceLengthI + $secondSliceLengthI, $thirdSliceLengthI),
+        ];
+
+
+        return view('frontend.pages.service', compact('services', 'client_nasional', 'client_internasional'));
     }
 
     public function contactUs()
