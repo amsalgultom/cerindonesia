@@ -61,12 +61,31 @@
 <div id="get-in-touch" class="mx-auto my-20 flex max-w-4xl flex-col items-start justify-center text-center aos-init aos-animate" data-aos="slide-right">
     <h2 class="mx-auto text-4xl font-bold" style="font-family: __Libre_Baskerville_7a5e83, __Libre_Baskerville_Fallback_7a5e83; font-style: normal;">@lang('messages.hubungi_kami.get_in_touch')</h2>
     <div class="mt-6 flex w-full flex-col break-words md:mt-10 lg:flex-row">
-        <form class="w-full bg-dark-100 px-4 py-16 lg:w-1/2 lg:px-8">
+        <form class="w-full bg-dark-100 px-4 py-16 lg:w-1/2 lg:px-8" action="{{ route('send.email') }}" method="post">
+            @csrf
             <p class="text-2xl" style="font-family: __Libre_Baskerville_7a5e83, __Libre_Baskerville_Fallback_7a5e83; font-style: normal;">@lang('messages.hubungi_kami.need_some_help')</p>
-            <div class="space-y-4"><label for="email" class="mt-12 flex flex-col items-start gap-2"><span class="after:ml-0.5 after:text-red-500 after:content-['*']">E-mail</span><input required="" type="email" id="email" arial-label="Input your email" placeholder="Input your email" class="w-full rounded-sm border border-gray-300 bg-gray-50 px-2 py-2 text-dark-900 placeholder-gray-400 ring ring-transparent focus:outline-none focus:ring-secondary-300" value=""></label><label for="name" class="mt-12 flex flex-col items-start gap-2"><span class="after:ml-0.5 after:text-red-500 after:content-['*']">Name</span><input required="" type="text" id="name" arial-label="Input your name" placeholder="Input your name" class="w-full rounded-sm border border-gray-300 bg-gray-50 px-2 py-2 text-dark-900 placeholder-gray-400 ring ring-transparent focus:outline-none focus:ring-secondary-300" value=""></label><label for="subject" class="mt-12 flex flex-col items-start gap-2"><span class="after:ml-0.5 after:text-red-500 after:content-['*']">Subject</span><input required="" type="text" id="subject" arial-label="What is your topic?" placeholder="What is your topic?" class="w-full rounded-sm border border-gray-300 bg-gray-50 px-2 py-2 text-dark-900 placeholder-gray-400 ring ring-transparent focus:outline-none focus:ring-secondary-300" value=""></label><label for="message" class="mt-12 flex flex-col items-start gap-2"><span class="after:ml-0.5 after:text-red-500 after:content-['*']">Message</span><textarea required="" id="message" arial-label="Please describe your message" placeholder="Please describe your message" class="h-36 w-full resize-none rounded-sm border border-gray-300 bg-gray-50 px-2 py-2 text-dark-900 placeholder-gray-400 ring ring-transparent focus:outline-none focus:ring-secondary-300"></textarea></label></div>
+            <div class="space-y-4">
+                <label for="email" class="mt-12 flex flex-col items-start gap-2">
+                    <span class="after:ml-0.5 after:text-red-500 after:content-['*']">E-mail</span>
+                    <input required="" type="email" name="email" id="email" arial-label="Input your email" placeholder="Input your email" class="w-full rounded-sm border border-gray-300 bg-gray-50 px-2 py-2 text-dark-900 placeholder-gray-400 ring ring-transparent focus:outline-none focus:ring-secondary-300" value="">
+                </label>
+                <label for="name" class="mt-12 flex flex-col items-start gap-2">
+                    <span class="after:ml-0.5 after:text-red-500 after:content-['*']">Name</span>
+                    <input required="" type="text" name="name" id="name" arial-label="Input your name" placeholder="Input your name" class="w-full rounded-sm border border-gray-300 bg-gray-50 px-2 py-2 text-dark-900 placeholder-gray-400 ring ring-transparent focus:outline-none focus:ring-secondary-300" value="">
+                </label>
+                <label for="subject" class="mt-12 flex flex-col items-start gap-2">
+                    <span class="after:ml-0.5 after:text-red-500 after:content-['*']">Subject</span>
+                    <input required="" type="text" name="subject" id="subject" arial-label="What is your topic?" placeholder="What is your topic?" class="w-full rounded-sm border border-gray-300 bg-gray-50 px-2 py-2 text-dark-900 placeholder-gray-400 ring ring-transparent focus:outline-none focus:ring-secondary-300" value="">
+                </label>
+                    <label for="message" class="mt-12 flex flex-col items-start gap-2">
+                        <span class="after:ml-0.5 after:text-red-500 after:content-['*']">Message</span>
+                        <textarea required="" id="message" name="message" arial-label="Please describe your message" placeholder="Please describe your message" class="h-36 w-full resize-none rounded-sm border border-gray-300 bg-gray-50 px-2 py-2 text-dark-900 placeholder-gray-400 ring ring-transparent focus:outline-none focus:ring-secondary-300"></textarea>
+                    </label>
+                </div>
             <div class="mt-8">
                 <p class="px-8 text-xs text-gray-600">@lang('messages.hubungi_kami.submit')</p>
-                <div class="mt-4 flex w-full items-center justify-center"><button type="submit" class="flex w-full justify-center bg-primary-500 py-2 text-center font-semibold tracking-wide text-white outline-none focus-within:ring focus-within:ring-secondary-300 hover:bg-primary-600 disabled:cursor-not-allowed disabled:bg-zinc-400 disabled:hover:bg-zinc-400" style="font-family: __Source_Sans_Pro_f20cbd, __Source_Sans_Pro_Fallback_f20cbd; font-style: normal;">Send</button></div>
+                <div class="mt-4 flex w-full items-center justify-center">
+                    <button type="submit" class="flex w-full justify-center bg-primary-500 py-2 text-center font-semibold tracking-wide text-white outline-none focus-within:ring focus-within:ring-secondary-300 hover:bg-primary-600 disabled:cursor-not-allowed disabled:bg-zinc-400 disabled:hover:bg-zinc-400" style="font-family: __Source_Sans_Pro_f20cbd, __Source_Sans_Pro_Fallback_f20cbd; font-style: normal;">Send</button></div>
             </div>
         </form>
         <div class="w-full lg:w-1/2"><iframe title="maps" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3963.549523380369!2d106.81839108206667!3d-6.578391734424436!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c682f69c91e1%3A0xbb4f4e88c299dc11!2sCER%20Indonesia!5e0!3m2!1sen!2sid!4v1680134097721!5m2!1sen!2sid" class="aspect-3/4 h-full w-full lg:aspect-4/3" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="border: 0px;"></iframe></div>

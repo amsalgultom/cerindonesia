@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ContactFormMail;
 use App\Models\Banner;
 use App\Models\Client;
 use App\Models\Service;
 use App\Models\Team;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class FrontendController extends Controller
 {
@@ -67,5 +69,21 @@ class FrontendController extends Controller
         } catch (\Exception $e) {
             return response()->json(['message' => 'Error creating storage link', 'error' => $e->getMessage()], 500);
         }
+    }
+
+    public function sendEmail(Request $request)
+    {
+        $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|string|email|max:255',
+            'subject' => 'required|string|max:255',
+            'message' => 'required|string',
+        ]);
+
+        $data = $request->all();
+
+        Mail::to('new@cerindonesia.org')->send(new ContactFormMail($data));
+
+        return back()->with('success', 'Your message has been sent successfully!');
     }
 }

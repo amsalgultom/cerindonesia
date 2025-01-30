@@ -101,3 +101,5 @@ Route::get('/storage/{category}/{filename}', function ($category, $filename) {
 
     abort(404, 'File not found');
 });
+
+Route::post('/send-email', [FrontendController::class, 'sendEmail'])->name('send.email');
