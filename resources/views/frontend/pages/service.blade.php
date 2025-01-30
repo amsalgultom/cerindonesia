@@ -65,8 +65,8 @@
             <div class="mt-6 w-full">
                 <div class="bg-dark-100s sticky top-0 z-20 bg-white shadow-b aos-init aos-animate" data-aos="zoom-in-up">
                     <div class="mx-auto flex w-full justify-evenly lg:w-6/12">
-                        <button type="button" class="w-full border-b-2 py-2 border-primary-700 font-semibold text-primary-700">@lang('messages.menu.klien_nasional')</button>
-                        <button type="button" class="w-full border-b-2 py-2 border-transparent">@lang('messages.menu.klien_internasional')</button>
+                        <button type="button" class="nasional-link w-full border-b-2 py-2 border-primary-700 font-semibold text-primary-700">@lang('messages.menu.klien_nasional')</button>
+                        <button type="button" class="internasional-link w-full border-b-2 py-2 border-transparent">@lang('messages.menu.klien_internasional')</button>
                     </div>
                 </div>
                 <section id="national-clients" class="-mt-12 pt-12">
@@ -205,5 +205,21 @@
             },
         });
     });
+
+    // Handle click event for "Tenaga Ahli"
+    $('.nasional-link').click(function() {
+            window.location.hash = '#national-clients';
+
+            $('.nasional-link').addClass('border-primary-700 font-semibold text-primary-700').removeClass('border-transparent');
+            $('.internasional-link').removeClass('border-primary-700 font-semibold text-primary-700').addClass('border-transparent');
+        });
+
+        // Handle click event for "Tim Kami"
+        $('.internasional-link').click(function() {
+            window.location.hash = '#international-clients';
+
+            $('.internasional-link').addClass('border-primary-700 font-semibold text-primary-700').removeClass('border-transparent');
+            $('.nasional-link').removeClass('border-primary-700 font-semibold text-primary-700').addClass('border-transparent');
+        });
 </script>
 @endpush

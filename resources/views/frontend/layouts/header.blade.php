@@ -30,8 +30,11 @@
         <div style="position:relative">
           <ul data-orientation="horizontal" class="hidden lg:ml-auto lg:flex lg:items-center lg:space-x-4" dir="ltr">
             <li class="relative relative-nav group">
-              <button data-state="closed" aria-expanded="false" title="@lang('messages.menu.siapa_kami')"
-                class="content-header-3 inline-flex items-center gap-1 px-2 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 group-hover:lg:text-black group-hover:lg:hover:text-primary-600 group-hover:lg:focus:text-primary-600 lg:text-white lg:hover:text-primary-400 lg:focus:text-primary-400 text-base">
+              @if(request()->routeIs('who-we-are'))
+              <button data-state="closed" aria-expanded="false" title="@lang('messages.menu.siapa_kami')" class="content-header-3s group inline-flex items-center gap-1 px-2 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 group-hover:text-primary-600 group-hover:hover:text-primary-400 group-hover:focus:text-primary-400 text-primary-600 hover:text-primary-400 focus:text-primary-400 lg:text-primary-200 lg:hover:text-primary-400 lg:focus:text-primary-400 font-semibold text-base">
+              @else
+              <button data-state="closed" aria-expanded="false" title="@lang('messages.menu.siapa_kami')" class="content-header-3 inline-flex items-center gap-1 px-2 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 group-hover:lg:text-black group-hover:lg:hover:text-primary-600 group-hover:lg:focus:text-primary-600 lg:text-white lg:hover:text-primary-400 lg:focus:text-primary-400 text-base">
+              @endif
                 @lang('messages.menu.siapa_kami')
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                   stroke="currentColor" class="h-4 w-4 duration-200 group-data-[state=open]:-rotate-180">
@@ -48,8 +51,11 @@
                </div>
             </li>
             <li class="relative relative-nav group">
-              <button data-state="closed" aria-expanded="false" title="@lang('messages.menu.layanan')"
-                class="content-header-3 inline-flex items-center gap-1 px-2 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 group-hover:lg:text-black group-hover:lg:hover:text-primary-600 group-hover:lg:focus:text-primary-600 lg:text-white lg:hover:text-primary-400 lg:focus:text-primary-400 text-base">
+              @if(request()->routeIs('services'))
+              <button data-state="closed" aria-expanded="false" title="@lang('messages.menu.layanan')" class="content-header-3s group inline-flex items-center gap-1 px-2 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 group-hover:text-primary-600 group-hover:hover:text-primary-400 group-hover:focus:text-primary-400 text-primary-600 hover:text-primary-400 focus:text-primary-400 lg:text-primary-200 lg:hover:text-primary-400 lg:focus:text-primary-400 font-semibold text-base">
+              @else
+              <button data-state="closed" aria-expanded="false" title="@lang('messages.menu.layanan')"class="content-header-3 inline-flex items-center gap-1 px-2 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 group-hover:lg:text-black group-hover:lg:hover:text-primary-600 group-hover:lg:focus:text-primary-600 lg:text-white lg:hover:text-primary-400 lg:focus:text-primary-400 text-base">
+              @endif
                 @lang('messages.menu.layanan')
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                   stroke="currentColor" class="h-4 w-4 duration-200 group-data-[state=open]:-rotate-180">
@@ -65,8 +71,11 @@
               </div>
             </li>
             <li class="relative relative-nav group">
-              <button data-state="closed" aria-expanded="false" title="@lang('messages.menu.bantuan')"
-                class="content-header-3 inline-flex items-center gap-1 px-2 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 group-hover:lg:text-black group-hover:lg:hover:text-primary-600 group-hover:lg:focus:text-primary-600 lg:text-white lg:hover:text-primary-400 lg:focus:text-primary-400 text-base">
+              @if(request()->routeIs('contact-us'))
+              <button data-state="closed" aria-expanded="false" title="@lang('messages.menu.bantuan')" class="content-header-3s group inline-flex items-center gap-1 px-2 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 group-hover:text-primary-600 group-hover:hover:text-primary-400 group-hover:focus:text-primary-400 text-primary-600 hover:text-primary-400 focus:text-primary-400 lg:text-primary-200 lg:hover:text-primary-400 lg:focus:text-primary-400 font-semibold text-base">
+              @else
+              <button data-state="closed" aria-expanded="false" title="@lang('messages.menu.bantuan')" class="content-header-3 inline-flex items-center gap-1 px-2 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 group-hover:lg:text-black group-hover:lg:hover:text-primary-600 group-hover:lg:focus:text-primary-600 lg:text-white lg:hover:text-primary-400 lg:focus:text-primary-400 text-base">
+              @endif
                 @lang('messages.menu.bantuan')
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                   stroke="currentColor" class="h-4 w-4 duration-200 group-data-[state=open]:-rotate-180">
@@ -99,24 +108,30 @@
           <nav class="absolute w-full border border-dark-200 bg-white pb-6 pt-4 shadow-md nav-mobile" role="none">
             <div class="flow-root" role="none">
               <div class="-my-2 flex flex-col space-y-1 px-6" role="none">
-                
-                <!-- Siapa Kami -->
-                <a title="@lang('messages.menu.siapa_kami')" href="/id/who-we-are/" role="none">
+                <a title="@lang('messages.menu.siapa_kami')" href="{{ route('who-we-are', ['lang' => app()->getLocale()]) }}" role="none">
+                  @if(request()->routeIs('who-we-are'))
                   <span class="inline-flex px-2 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 text-primary-600 hover:text-primary-400 focus:text-primary-400 lg:text-primary-200 lg:hover:text-primary-400 lg:focus:text-primary-400 font-semibold text-base">
+                  @else
+                  <span class="inline-flex px-2 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 lg:text-white lg:hover:text-primary-400 lg:focus:text-primary-400 text-base">  
+                  @endif
                     @lang('messages.menu.siapa_kami')
                   </span>
                 </a>
-          
-                <!-- Layanan -->
-                <a title="@lang('messages.menu.layanan')" href="/id/services/" role="none">
+                <a title="@lang('messages.menu.layanan')" href="{{ route('services', ['lang' => app()->getLocale()]) }}" role="none">
+                  @if(request()->routeIs('services'))
+                  <span class="inline-flex px-2 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 text-primary-600 hover:text-primary-400 focus:text-primary-400 lg:text-primary-200 lg:hover:text-primary-400 lg:focus:text-primary-400 font-semibold text-base">
+                  @else
                   <span class="inline-flex px-2 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 lg:text-white lg:hover:text-primary-400 lg:focus:text-primary-400 text-base">
+                  @endif
                     @lang('messages.menu.layanan')
                   </span>
                 </a>
-          
-                <!-- Bantuan -->
-                <a title="@lang('messages.menu.bantuan')" href="/id/contact-us/" role="none">
+                <a title="@lang('messages.menu.bantuan')" href="{{ route('contact-us', ['lang' => app()->getLocale()]) }}" role="none">
+                  @if(request()->routeIs('contact-us'))
+                  <span class="inline-flex px-2 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 text-primary-600 hover:text-primary-400 focus:text-primary-400 lg:text-primary-200 lg:hover:text-primary-400 lg:focus:text-primary-400 font-semibold text-base">
+                  @else
                   <span class="inline-flex px-2 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 lg:text-white lg:hover:text-primary-400 lg:focus:text-primary-400 text-base">
+                  @endif
                     @lang('messages.menu.bantuan')
                   </span>
                 </a>
@@ -127,16 +142,28 @@
                 <!-- Language Switcher -->
                 <div class="-mx-2" role="none">
                 <div class="flex items-center justify-start" role="none">
-                  
-                  <!-- Indonesian Link -->
-                  <a title="Indonesian" class="w-full px-4 text-center duration-300 group-hover:text-primary-600 group-hover:hover:text-primary-400 group-hover:focus:text-primary-400 text-primary-600 hover:text-primary-400 focus:text-primary-400 lg:text-primary-200 lg:hover:text-primary-400 lg:focus:text-primary-400 font-semibold text-sm" href="#" onclick="toggleLanguage(event, 'id')" role="none">
+
+
+                  <!-- <a title="Indonesian" class="w-full px-4 text-center duration-300 group-hover:text-primary-600 group-hover:hover:text-primary-400 group-hover:focus:text-primary-400 text-primary-600 hover:text-primary-400 focus:text-primary-400 lg:text-primary-200 lg:hover:text-primary-400 lg:focus:text-primary-400 font-semibold text-sm" href="#" onclick="toggleLanguage(event, 'id')" role="none">
                     Indonesian
                   </a>
                   
-                  <!-- English Link -->
                   <a title="English" class="w-full px-4 text-center duration-300 group-hover:lg:text-black group-hover:lg:hover:text-primary-600 group-hover:lg:focus:text-primary-600 lg:text-white lg:hover:text-primary-400 lg:focus:text-primary-400 text-sm" href="#" onclick="toggleLanguage(event, 'en')" role="none">
                     English
-                  </a>
+                  </a> -->
+
+                  @if (app()->getLocale() == 'id')
+                    <a title="Indonesian" class="w-full px-4 text-center duration-300 group-hover:text-primary-600 group-hover:hover:text-primary-400 group-hover:focus:text-primary-400 text-primary-600 hover:text-primary-400 focus:text-primary-400 lg:text-primary-200 lg:hover:text-primary-400 lg:focus:text-primary-400 font-semibold text-sm"
+                      href="#" onclick="toggleLanguage(event, 'id')" role="none">Indonesian</a>
+                      <a title="English" class="w-full px-4 text-center duration-300 group-hover:lg:text-black group-hover:lg:hover:text-primary-600 group-hover:lg:focus:text-primary-600 lg:text-white lg:hover:text-primary-400 lg:focus:text-primary-400 text-sm"
+                      href="#" onclick="toggleLanguage(event, 'en')" role="none">English</a>
+                  @else
+                  <a title="Indonesian" class="w-full px-4 text-center duration-300 group-hover:lg:text-black group-hover:lg:hover:text-primary-600 group-hover:lg:focus:text-primary-600 lg:text-white lg:hover:text-primary-400 lg:focus:text-primary-400 text-sm"
+                      href="#" onclick="toggleLanguage(event, 'id')" role="none">Indonesian</a>
+                      <a title="English" class="w-full px-4 text-center duration-300 group-hover:text-primary-600 group-hover:hover:text-primary-400 group-hover:focus:text-primary-400 text-primary-600 hover:text-primary-400 focus:text-primary-400 lg:text-primary-200 lg:hover:text-primary-400 lg:focus:text-primary-400 font-semibold text-sm"
+                      href="#" onclick="toggleLanguage(event, 'en')" role="none">English</a>
+                  @endif
+
                 </div>
               </div>
               </div>
