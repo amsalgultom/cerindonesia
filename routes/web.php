@@ -91,9 +91,9 @@ Route::middleware(['auth'])->group(function () {
     });
 });
 
-Route::get('storage/{filename}', function ($filename) {
+Route::get('/storage/{category}/{filename}', function ($category, $filename) {
     // Make sure to validate the filename to avoid path traversal vulnerabilities
-    $filePath = storage_path('app/public/' . $filename);
+    $filePath = storage_path('app/public/' . $category . '/' . $filename);
 
     if (file_exists($filePath)) {
         return response()->file($filePath);

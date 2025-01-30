@@ -37,7 +37,7 @@ class BannerController extends Controller
                  ->addColumn('image', function ($row) {
                      // Assuming 'image' is the field containing the image path or URL
                      $imagePath = $row->image;
-                     $imgTag = '<img src="' . asset('storage/banner') . '/' . $imagePath . '" alt="Banner Image" width="200" height="200">';
+                     $imgTag = '<img src="' . url('storage/banner') . '/' . $imagePath . '" alt="Banner Image" width="200" height="200">';
                      return $imgTag;
                  })
                  ->rawColumns(['action', 'image'])
