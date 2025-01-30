@@ -4,9 +4,7 @@
       <div class="col-span-2 md:col-span-3 lg:col-span-2 lg:pr-8">
         <div class="w-fit"><a title="Logo CER Indonesia" class="flex" href="https://www.cerindonesia.org/id/"><img alt="Logo CER Indonesia" loading="lazy" width="256" height="256" decoding="async" data-nimg="1" class="h-20 w-auto -translate-x-4" style="color:transparent" src="{{ asset('images/logo-cerindo-footer.png') }}"></a>
         </div>
-        <p class="mt-7 text-base leading-relaxed text-dark-300">Mewujudkan Indonesia yang lestari, menjaga
-          keseimbangan antara kebutuhan manusia dan kelestarian alam untuk generasi sekarang dan yang akan
-          datang.</p>
+        <p class="mt-7 text-base leading-relaxed text-dark-300">@lang('messages.footer')</p>
         <ul class="mt-9 flex items-center space-x-3">
           <li><a aria-label="Go to Linkedin" href="https://id.linkedin.com/company/cer-indonesia" target="_blank" class="flex h-7 w-7 items-center justify-center rounded-full bg-primary-700 text-white transition-all duration-200 hover:bg-primary-600 focus:bg-primary-600"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                 <path d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zM349.3 793.7H230.6V411.9h118.7v381.8zm-59.3-434a68.8 68.8 0 1 1 68.8-68.8c-.1 38-30.9 68.8-68.8 68.8zm503.7 434H675.1V608c0-44.3-.8-101.2-61.7-101.2-61.7 0-71.2 48.2-71.2 98v188.9H423.7V411.9h113.8v52.2h1.6c15.8-30 54.5-61.7 112.3-61.7 120.2 0 142.3 79.1 142.3 181.9v209.4z">
@@ -22,35 +20,35 @@
         <div>
           <p class="text-sm font-bold uppercase tracking-widest text-primary-400">CER Indonesia</p>
           <ul class="mt-6 space-y-4 lg:mt-3 lg:space-y-2">
-            <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="https://www.cerindonesia.org/id/">Beranda</a></li>
-            <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="https://www.cerindonesia.org/id/who-we-are/">Siapa Kami</a></li>
-            <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="https://www.cerindonesia.org/id/services/">Layanan</a></li>
+            <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="https://www.cerindonesia.org/id/">@lang('messages.menu.beranda')</a></li>
+            <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="https://www.cerindonesia.org/id/who-we-are/">@lang('messages.menu.siapa_kami')</a></li>
+            <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="https://www.cerindonesia.org/id/services/">@lang('messages.menu.layanan')</a></li>
           </ul>
         </div>
         <div>
-          <p class="text-sm font-bold uppercase tracking-widest text-primary-400">Tentang Kami</p>
+          <p class="text-sm font-bold uppercase tracking-widest text-primary-400">@lang('messages.menu.tentang_kami')</p>
           <ul class="mt-6 space-y-4 lg:mt-3 lg:space-y-2">
-            <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="https://www.cerindonesia.org/id/who-we-are/">Siapa Kami</a></li>
-            <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="https://www.cerindonesia.org/id/who-we-are/#meet-our-experts">Temui Tenaga Ahli</a></li>
-            <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="https://www.cerindonesia.org/id/who-we-are/#meet-our-teams">Temui Tim Kami</a></li>
+            <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="https://www.cerindonesia.org/id/who-we-are/">@lang('messages.menu.siapa_kami')</a></li>
+            <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="https://www.cerindonesia.org/id/who-we-are/#meet-our-experts">@lang('messages.menu.temui_tenaga_ahli')</a></li>
+            <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="https://www.cerindonesia.org/id/who-we-are/#meet-our-teams">@lang('messages.menu.temui_tim_kami')</a></li>
           </ul>
         </div>
         <div>
-          <p class="text-sm font-bold uppercase tracking-widest text-primary-400">Layanan</p>
+          <p class="text-sm font-bold uppercase tracking-widest text-primary-400">@lang('messages.menu.layanan')</p>
           <ul class="mt-6 space-y-4 lg:mt-3 lg:space-y-2">
-            <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="https://www.cerindonesia.org/id/services/">Layanan Kami</a></li>
-            <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="https://www.cerindonesia.org/id/services/#map-of-projects">Peta Proyek</a></li>
-            <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="https://www.cerindonesia.org/id/services/#international-clients">Klien Internasional</a>
+            <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="https://www.cerindonesia.org/id/services/">@lang('messages.menu.layanan_kami')</a></li>
+            <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="https://www.cerindonesia.org/id/services/#map-of-projects">@lang('messages.menu.peta_proyek')</a></li>
+            <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="https://www.cerindonesia.org/id/services/#international-clients">@lang('messages.menu.klien_internasional')</a>
             </li>
-            <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="https://www.cerindonesia.org/id/services/#national-clients">Klien Nasional</a></li>
+            <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="https://www.cerindonesia.org/id/services/#national-clients">@lang('messages.menu.klien_nasional')</a></li>
           </ul>
         </div>
         <div>
-          <p class="text-sm font-bold uppercase tracking-widest text-primary-400">Bantuan</p>
+          <p class="text-sm font-bold uppercase tracking-widest text-primary-400">@lang('messages.menu.help')</p>
           <ul class="mt-6 space-y-4 lg:mt-3 lg:space-y-2">
-            <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="https://www.cerindonesia.org/id/contact-us/">Hubungi Kami </a></li>
-            <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="https://www.cerindonesia.org/id/disclaimer/">Disclaimer</a></li>
-            <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="https://www.cerindonesia.org/id/contact-us/#get-in-touch">Punya pertanyaan?</a></li>
+            <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="https://www.cerindonesia.org/id/contact-us/">@lang('messages.menu.hubungi_kami') </a></li>
+            <!-- <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="https://www.cerindonesia.org/id/disclaimer/">@lang('messages.menu.siapa_kami')</a></li> -->
+            <li><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 text-dark-300" href="https://www.cerindonesia.org/id/contact-us/#get-in-touch">@lang('messages.menu.tanya_kami')</a></li>
           </ul>
         </div>
       </div>

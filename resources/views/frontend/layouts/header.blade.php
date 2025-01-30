@@ -30,9 +30,9 @@
         <div style="position:relative">
           <ul data-orientation="horizontal" class="hidden lg:ml-auto lg:flex lg:items-center lg:space-x-4" dir="ltr">
             <li class="relative relative-nav group">
-              <button data-state="closed" aria-expanded="false" title="Siapa Kami"
+              <button data-state="closed" aria-expanded="false" title="@lang('messages.menu.siapa_kami')"
                 class="content-header-3 inline-flex items-center gap-1 px-2 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 group-hover:lg:text-black group-hover:lg:hover:text-primary-600 group-hover:lg:focus:text-primary-600 lg:text-white lg:hover:text-primary-400 lg:focus:text-primary-400 text-base">
-                Siapa Kami
+                @lang('messages.menu.siapa_kami')
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                   stroke="currentColor" class="h-4 w-4 duration-200 group-data-[state=open]:-rotate-180">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
@@ -41,16 +41,16 @@
               <!-- Dropdown menu -->
                <div class="absolute hidden group-hover:block top-10 w-full sm:w-auto pt-2 submenu-show">
                  <ul class="gap-3 rounded bg-white px-6 py-2 shadow-md">
-                   <li><a href="{{ route('who-we-are', ['lang' => app()->getLocale()]) }}" class="inline-flex px-1 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 lg:text-black lg:hover:text-primary-400 lg:focus:text-primary-400 text-base">Tentang Kami</a></li>
-                   <li><a href="{{ route('who-we-are', ['lang' => app()->getLocale()]) }}#meet-our-experts" class="inline-flex px-1 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 lg:text-black lg:hover:text-primary-400 lg:focus:text-primary-400 text-base">Temui Tenaga Ahli</a></li>
-                   <li><a href="{{ route('who-we-are', ['lang' => app()->getLocale()]) }}#meet-our-teams" class="inline-flex px-1 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 lg:text-black lg:hover:text-primary-400 lg:focus:text-primary-400 text-base">Temui Tim Kami</a></li>
+                   <li><a href="{{ route('who-we-are', ['lang' => app()->getLocale()]) }}" class="inline-flex px-1 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 lg:text-black lg:hover:text-primary-400 lg:focus:text-primary-400 text-base">@lang('messages.menu.tentang_kami')</a></li>
+                   <li><a href="{{ route('who-we-are', ['lang' => app()->getLocale()]) }}#meet-our-experts" class="inline-flex px-1 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 lg:text-black lg:hover:text-primary-400 lg:focus:text-primary-400 text-base">@lang('messages.menu.temui_tenaga_ahli')</a></li>
+                   <li><a href="{{ route('who-we-are', ['lang' => app()->getLocale()]) }}#meet-our-teams" class="inline-flex px-1 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 lg:text-black lg:hover:text-primary-400 lg:focus:text-primary-400 text-base">@lang('messages.menu.temui_tim_kami')</a></li>
                  </ul>
                </div>
             </li>
             <li class="relative relative-nav group">
-              <button data-state="closed" aria-expanded="false" title="Layanan"
+              <button data-state="closed" aria-expanded="false" title="@lang('messages.menu.layanan')"
                 class="content-header-3 inline-flex items-center gap-1 px-2 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 group-hover:lg:text-black group-hover:lg:hover:text-primary-600 group-hover:lg:focus:text-primary-600 lg:text-white lg:hover:text-primary-400 lg:focus:text-primary-400 text-base">
-                Layanan
+                @lang('messages.menu.layanan')
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                   stroke="currentColor" class="h-4 w-4 duration-200 group-data-[state=open]:-rotate-180">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
@@ -59,15 +59,15 @@
               <!-- Dropdown menu -->
               <div class="absolute hidden group-hover:block top-10 w-full sm:w-auto pt-2 submenu-show">
                 <ul class="gap-3 rounded bg-white px-6 py-2 shadow-md">
-                  <li><a href="{{ route('services', ['lang' => app()->getLocale()]) }}" class="inline-flex px-1 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 lg:text-black lg:hover:text-primary-400 lg:focus:text-primary-400 text-base">Layanan Kami</a></li>
-                  <li><a href="{{ route('services', ['lang' => app()->getLocale()]) }}" class="inline-flex px-1 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 lg:text-black lg:hover:text-primary-400 lg:focus:text-primary-400 text-base">Proyek Kami</a></li>
+                  <li><a href="{{ route('services', ['lang' => app()->getLocale()]) }}" class="inline-flex px-1 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 lg:text-black lg:hover:text-primary-400 lg:focus:text-primary-400 text-base">@lang('messages.menu.layanan_kami')</a></li>
+                  <li><a href="{{ route('services', ['lang' => app()->getLocale()]) }}" class="inline-flex px-1 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 lg:text-black lg:hover:text-primary-400 lg:focus:text-primary-400 text-base">@lang('messages.menu.proyek_kami')</a></li>
                 </ul>
               </div>
             </li>
             <li class="relative relative-nav group">
-              <button data-state="closed" aria-expanded="false" title="Bantuan"
+              <button data-state="closed" aria-expanded="false" title="@lang('messages.menu.bantuan')"
                 class="content-header-3 inline-flex items-center gap-1 px-2 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 group-hover:lg:text-black group-hover:lg:hover:text-primary-600 group-hover:lg:focus:text-primary-600 lg:text-white lg:hover:text-primary-400 lg:focus:text-primary-400 text-base">
-                Bantuan
+                @lang('messages.menu.bantuan')
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                   stroke="currentColor" class="h-4 w-4 duration-200 group-data-[state=open]:-rotate-180">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
@@ -76,8 +76,8 @@
               <!-- Dropdown menu -->
                <div class="absolute hidden group-hover:block top-10 w-full sm:w-auto pt-2 submenu-show">
                  <ul class="gap-3 rounded bg-white px-6 py-2 shadow-md">
-                   <li><a href="{{ route('contact-us', ['lang' => app()->getLocale()]) }}" class="inline-flex px-1 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 lg:text-black lg:hover:text-primary-400 lg:focus:text-primary-400 text-base">Hubungi Kami</a></li>
-                   <li><a href="{{ route('contact-us', ['lang' => app()->getLocale()]) }}" class="inline-flex px-1 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 lg:text-black lg:hover:text-primary-400 lg:focus:text-primary-400 text-base">Tanya Kami</a></li>
+                   <li><a href="{{ route('contact-us', ['lang' => app()->getLocale()]) }}" class="inline-flex px-1 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 lg:text-black lg:hover:text-primary-400 lg:focus:text-primary-400 text-base">@lang('messages.menu.hubungi_kami')</a></li>
+                   <li><a href="{{ route('contact-us', ['lang' => app()->getLocale()]) }}" class="inline-flex px-1 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 lg:text-black lg:hover:text-primary-400 lg:focus:text-primary-400 text-base">@lang('messages.menu.tanya_kami')</a></li>
                  </ul>
                </div>
             </li>
@@ -101,23 +101,23 @@
               <div class="-my-2 flex flex-col space-y-1 px-6" role="none">
                 
                 <!-- Siapa Kami -->
-                <a title="Siapa Kami" href="/id/who-we-are/" role="none">
+                <a title="@lang('messages.menu.siapa_kami')" href="/id/who-we-are/" role="none">
                   <span class="inline-flex px-2 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 text-primary-600 hover:text-primary-400 focus:text-primary-400 lg:text-primary-200 lg:hover:text-primary-400 lg:focus:text-primary-400 font-semibold text-base">
-                    Siapa Kami
+                    @lang('messages.menu.siapa_kami')
                   </span>
                 </a>
           
                 <!-- Layanan -->
-                <a title="Layanan" href="/id/services/" role="none">
+                <a title="@lang('messages.menu.layanan')" href="/id/services/" role="none">
                   <span class="inline-flex px-2 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 lg:text-white lg:hover:text-primary-400 lg:focus:text-primary-400 text-base">
-                    Layanan
+                    @lang('messages.menu.layanan')
                   </span>
                 </a>
           
                 <!-- Bantuan -->
-                <a title="Bantuan" href="/id/contact-us/" role="none">
+                <a title="@lang('messages.menu.bantuan')" href="/id/contact-us/" role="none">
                   <span class="inline-flex px-2 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 lg:text-white lg:hover:text-primary-400 lg:focus:text-primary-400 text-base">
-                    Bantuan
+                    @lang('messages.menu.bantuan')
                   </span>
                 </a>
                 

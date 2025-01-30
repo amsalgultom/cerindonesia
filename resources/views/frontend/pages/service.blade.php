@@ -1,16 +1,15 @@
 @extends('frontend.layouts.app')
-@section('title', 'Siapa Kami · CER Indonesia · Environmental Consultancy Company')
+@section('title', __('messages.menu.layanan_kami') .' · CER Indonesia · Environmental Consultancy Company')
 
 @section('content')
 
 <section class="aspect-3/4 h-128 w-full md:aspect-4/3">
-    <div class="relative h-full bg-red-200"><img alt="Siapa Kami" loading="eager" decoding="async" data-nimg="fill" class="object-cover" sizes="100vw" src="{{ asset('images/IMG_20211114_111659.jpg') }}" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;">
+    <div class="relative h-full bg-red-200"><img alt="@lang('messages.menu.layanan_kami')" loading="eager" decoding="async" data-nimg="fill" class="object-cover" sizes="100vw" src="{{ asset('images/IMG_20211114_111659.jpg') }}" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;">
         <div class="absolute flex h-full w-full flex-col items-center justify-center gap-4 bg-gradient-to-t from-black/50 to-black/50 text-white">
             <h1 class="px-6 text-center text-4xl font-bold text-white md:px-20 aos-init aos-animate" data-aos="fade" style="font-family: __Libre_Baskerville_7a5e83, __Libre_Baskerville_Fallback_7a5e83; font-style: normal;">
-                Layanan Kami</h1>
+            @lang('messages.menu.layanan_kami')</h1>
             <p class="mt-4 px-12 text-center text-dark-200 md:px-36 aos-init aos-animate" data-aos="fade" style="font-family: __Source_Sans_Pro_f20cbd, __Source_Sans_Pro_Fallback_f20cbd; font-style: normal;">
-                CER Indonesia menawarkan layanan berupa penelitian dan pengembangan, peningkatan kapasitas, dan
-                konsultasi di bidang-bidang di bawah ini:</p>
+            @lang('messages.layanan.background_banner')</p>
         </div>
     </div>
 </section>
@@ -19,9 +18,8 @@
         <div class="mx-auto h-full max-w-7xl px-4">
             <div class="mx-auto flex max-w-4xl flex-col items-start justify-center pb-14 pt-14 text-center lg:pt-20">
                 <h2 class="mx-auto text-2xl font-bold" style="font-family: __Libre_Baskerville_7a5e83, __Libre_Baskerville_Fallback_7a5e83; font-style: normal;">
-                    KEUNGGULAN LAYANAN</h2>
-                <p class="mt-8 text-center md:px-20 lg:mt-12">CER Indonesia menawarkan layanan berupa penelitian dan
-                    pengembangan, peningkatan kapasitas, dan konsultasi di bidang-bidang di bawah ini:</p>
+                @lang('messages.layanan.title')</h2>
+                <p class="mt-8 text-center md:px-20 lg:mt-12">@lang('messages.layanan.background_banner')</p>
                 <section class="mt-4 grid grid-cols-1 gap-4 lg:mt-8 lg:grid-cols-2 lg:gap-8">
                     
                     @foreach($services as $service)
@@ -51,7 +49,7 @@
         <div class="mx-auto h-full max-w-7xl px-4">
             <div class="mx-auto flex max-w-4xl flex-col items-start justify-center pb-10 pt-10 text-center lg:pb-20 aos-init aos-animate">
                 <h2 class="mx-auto text-2xl font-bold" style="font-family: __Libre_Baskerville_7a5e83, __Libre_Baskerville_Fallback_7a5e83; font-style: normal;">
-                    Peta Proyek CER Indonesia</h2>
+                @lang('messages.layanan.peta')</h2>
                 <div class="mt-6 w-full shadow">
                 <iframe width="100%" height="600" src="https://maps.mapifator.com/places/zciEKCGOu51t1ZUuQVk1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" align="center"></iframe>
                 </div>
@@ -63,19 +61,19 @@
     <div class="mx-auto h-full max-w-7xl px-4">
         <div class="mx-auto flex max-w-4xl flex-col items-start justify-center pb-10 pt-10 text-center  lg:pb-20 lg:pt-20">
             <h2 class="mx-auto text-2xl font-bold aos-init aos-animate" data-aos="zoom-in-up" style="font-family: __Libre_Baskerville_7a5e83, __Libre_Baskerville_Fallback_7a5e83; font-style: normal;">
-                Klien Kami</h2>
+            @lang('messages.layanan.klien_kami')</h2>
             <div class="mt-6 w-full">
                 <div class="bg-dark-100s sticky top-0 z-20 bg-white shadow-b aos-init aos-animate" data-aos="zoom-in-up">
                     <div class="mx-auto flex w-full justify-evenly lg:w-6/12">
-                        <button type="button" class="w-full border-b-2 py-2 border-primary-700 font-semibold text-primary-700">Klien Nasional</button>
-                        <button type="button" class="w-full border-b-2 py-2 border-transparent">Klien Internasional</button>
+                        <button type="button" class="w-full border-b-2 py-2 border-primary-700 font-semibold text-primary-700">@lang('messages.menu.klien_nasional')</button>
+                        <button type="button" class="w-full border-b-2 py-2 border-transparent">@lang('messages.menu.klien_internasional')</button>
                     </div>
                 </div>
                 <section id="national-clients" class="-mt-12 pt-12">
                     <div class="-mt-12 pt-12">
                         <div class="flex flex-col items-start justify-center py-10">
                             <h2 class="mr-auto text-xl font-bold md:mt-4 aos-init aos-animate" data-aos="slide-left" style="font-family: __Libre_Baskerville_7a5e83, __Libre_Baskerville_Fallback_7a5e83; font-style: normal;">
-                                Klien Nasional</h2>
+                                @lang('messages.layanan.klien_kami')</h2>
                             <div class="mt-6 w-full space-y-12 md:mt-10">
                                 <div data-aos="zoom-in-up" class="aos-init aos-animate">
                                     <!-- First Swiper Row -->
@@ -124,7 +122,7 @@
                     <div class="-mt-12 pt-12">
                         <div class="flex flex-col items-start justify-center py-10">
                             <h2 class="ml-auto text-xl font-bold md:mt-4 aos-init aos-animate" data-aos="slide-right" style="font-family: __Libre_Baskerville_7a5e83, __Libre_Baskerville_Fallback_7a5e83; font-style: normal;">
-                                Klien Internasional</h2>
+                                @lang('messages.menu.klien_internasional')</h2>
                             <div class="mt-6 w-full space-y-12 md:mt-10">
                                 <div data-aos="zoom-in-up" class="aos-init aos-animate">
                                     <!-- First Swiper Row -->

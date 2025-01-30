@@ -1,5 +1,5 @@
 @extends('frontend.layouts.app')
-@section('title', 'Beranda · CER Indonesia · Environmental Consultancy Company')
+@section('title', __('messages.menu.beranda') .' · CER Indonesia · Environmental Consultancy Company')
 
 @section('content')
 
@@ -29,10 +29,8 @@
     <section id="home-vision" class="py-5 lg:py-8 bg-white md:w-1/2 md:px-md lg:px-16">
         <div class="mx-auto h-full max-w-7xl px-4">
             <div class="flex h-full flex-col items-center justify-center py-14 text-center aos-init aos-animate" data-aos="slide-up">
-                <h2 class="text-3xl font-bold">
-                    Visi</h2>
-                <p class="mt-4 text-center">Meningkatkan kualitas lingkungan lokal yang sejalan dengan kepedulian
-                    global terhadap kesejahteraan masyarakat.</p>
+                <h2 class="text-3xl font-bold">@lang('messages.visi')</h2>
+                <p class="mt-4 text-center">@lang('messages.deskripsi_visi')</p>
                 <div class="mt-4"><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 inline-flex h-10 items-center justify-between gap-1 bg-primary-500 px-4 text-sm font-semibold tracking-wide text-white hover:bg-primary-600 hover:text-white" href="https://www.cerindonesia.org/id/who-we-are/">Selengkapnya
                         <!-- --> <span aria-hidden="true">→</span></a></div>
             </div>
@@ -45,8 +43,7 @@
             <div class="flex h-full flex-col items-center justify-center py-14 text-center aos-init aos-animate" data-aos="slide-up">
                 <h2 class="text-3xl font-bold">
                     Carbon And Environmental Research Indonesia</h2>
-                <p class="mt-4 text-center"> Perusahaan konsultan perubahan iklim pertama yang didirikan dan
-                    dijalankan sepenuhnya oleh orang Indonesia sejak tahun 2004</p>
+                <p class="mt-4 text-center"> @lang('messages.cerindo_info_beranda')</p>
                 <div class="mt-4"><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 inline-flex h-10 items-center justify-between gap-1 bg-primary-500 px-4 text-sm font-semibold tracking-wide text-white hover:bg-primary-600 hover:text-white" href="https://www.cerindonesia.org/id/who-we-are/">Selengkapnya
                         <!-- --> <span aria-hidden="true">→</span></a></div>
             </div>
@@ -65,8 +62,7 @@
             <div class="items-centesr mx-auto flex max-w-3xl flex-col justify-center py-14">
                 <h2 class="text-center text-3xl font-bold">
                     Carbon And Environmental Research Indonesia</h2>
-                <p class="mt-4 text-center md:px-20">CER Indonesia menawarkan layanan berupa penelitian dan
-                    pengembangan, peningkatan kapasitas, dan konsultasi di bidang-bidang di bawah ini:</p>
+                <p class="mt-4 text-center md:px-20">@lang('messages.info_layanan_beranda')</p>
                 <section class="mt-8 grid grid-cols-1 gap-x-12 gap-y-8 md:grid-cols-2">
 
                 @foreach ($services as $service)
@@ -91,8 +87,8 @@
                     </div>
                 @endforeach
                 </section>
-                <div class="mx-auto mt-12"><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 inline-flex h-10 items-center justify-between gap-1 bg-primary-500 px-4 text-sm font-semibold tracking-wide text-white hover:bg-primary-600 hover:text-white" href="https://www.cerindonesia.org/id/services/">Selengkapnya
-                        <!-- --> <span aria-hidden="true">→</span></a></div>
+                <div class="mx-auto mt-12"><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 inline-flex h-10 items-center justify-between gap-1 bg-primary-500 px-4 text-sm font-semibold tracking-wide text-white hover:bg-primary-600 hover:text-white" href="https://www.cerindonesia.org/id/services/">
+                    @lang('messages.selengkapnya')<span aria-hidden="true">→</span></a></div>
             </div>
         </div>
     </section>
