@@ -33,12 +33,12 @@
           <span>Client</span>
         </a>
       </li>
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a class="nav-link {{ (request()->segment(2) == 'admin-general') ? '' : 'collapsed' }}" href="{{ route('general.index') }}">
           <i class="bi bi-gear"></i>
           <span>Setup General</span>
         </a>
-      </li>
+      </li> -->
     </ul>
 
   </aside><!-- End Sidebar-->

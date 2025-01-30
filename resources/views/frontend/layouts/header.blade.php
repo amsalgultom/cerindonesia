@@ -60,7 +60,7 @@
               <div class="absolute hidden group-hover:block top-10 w-full sm:w-auto pt-2 submenu-show">
                 <ul class="gap-3 rounded bg-white px-6 py-2 shadow-md">
                   <li><a href="{{ route('services', ['lang' => app()->getLocale()]) }}" class="inline-flex px-1 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 lg:text-black lg:hover:text-primary-400 lg:focus:text-primary-400 text-base">@lang('messages.menu.layanan_kami')</a></li>
-                  <li><a href="{{ route('services', ['lang' => app()->getLocale()]) }}" class="inline-flex px-1 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 lg:text-black lg:hover:text-primary-400 lg:focus:text-primary-400 text-base">@lang('messages.menu.proyek_kami')</a></li>
+                  <li><a href="{{ route('services', ['lang' => app()->getLocale()]) }}#map-of-projects" class="inline-flex px-1 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 lg:text-black lg:hover:text-primary-400 lg:focus:text-primary-400 text-base">@lang('messages.menu.proyek_kami')</a></li>
                 </ul>
               </div>
             </li>
@@ -77,7 +77,7 @@
                <div class="absolute hidden group-hover:block top-10 w-full sm:w-auto pt-2 submenu-show">
                  <ul class="gap-3 rounded bg-white px-6 py-2 shadow-md">
                    <li><a href="{{ route('contact-us', ['lang' => app()->getLocale()]) }}" class="inline-flex px-1 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 lg:text-black lg:hover:text-primary-400 lg:focus:text-primary-400 text-base">@lang('messages.menu.hubungi_kami')</a></li>
-                   <li><a href="{{ route('contact-us', ['lang' => app()->getLocale()]) }}" class="inline-flex px-1 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 lg:text-black lg:hover:text-primary-400 lg:focus:text-primary-400 text-base">@lang('messages.menu.tanya_kami')</a></li>
+                   <li><a href="{{ route('contact-us', ['lang' => app()->getLocale()]) }}#get-in-touch" class="inline-flex px-1 py-2 font-medium outline-none transition-all duration-300 hover:text-primary-600 focus:text-primary-600 lg:text-black lg:hover:text-primary-400 lg:focus:text-primary-400 text-base">@lang('messages.menu.tanya_kami')</a></li>
                  </ul>
                </div>
             </li>
