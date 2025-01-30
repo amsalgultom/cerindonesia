@@ -3,6 +3,7 @@
 use App\Http\Controllers\Admin\BannerController;
 use App\Http\Controllers\Admin\ClientController;
 use App\Http\Controllers\Admin\GeneralController;
+use App\Http\Controllers\Admin\MessageController;
 use App\Http\Controllers\Admin\ServiceController;
 use App\Http\Controllers\Admin\TeamController;
 use App\Http\Controllers\Auth\LoginRegisterController;
@@ -88,6 +89,11 @@ Route::middleware(['auth'])->group(function () {
         Route::get('/admin/client/edit/{client}', 'edit')->name('client.edit');
         Route::put('/admin/client/update/{client}', 'update')->name('client.update');
         Route::post('/admin/client/delete', 'delete')->name('client.delete');
+    });
+
+    Route::controller(MessageController::class)->group(function () {
+        Route::get('/admin/admin-message', 'index')->name('message.index');
+        Route::post('/admin/admin-message/save', 'save')->name('save.messages');
     });
 });
 
