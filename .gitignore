@@ -5,6 +5,7 @@
 /public/storage
 /storage/*.key
 /vendor
+/resources/lang
 .env
 .env.backup
 .env.production
@@ -16,4 +17,3 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
-/resources/lang
