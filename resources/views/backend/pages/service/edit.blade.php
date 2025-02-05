@@ -97,7 +97,7 @@
                                                     <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#showimage">
                                                         <i class="bi bi-eye-fill"></i>
                                                     </button></label>
-                                                <input type="file" name="image" class="form-control mb-2">
+                                                <input type="file" name="image" accept="image/png, image/gif, image/jpeg, image/webp" class="form-control mb-2">
                                             </div>
                                         </div>
                                     </div>
