@@ -8,7 +8,7 @@
         <div class="absolute flex h-full w-full flex-col items-center justify-center gap-4 bg-gradient-to-t from-black/50 to-black/50 text-white">
             <h1 class="px-6 text-center text-4xl font-bold text-white md:px-20 aos-init aos-animate" data-aos="fade" style="font-family: __Libre_Baskerville_7a5e83, __Libre_Baskerville_Fallback_7a5e83; font-style: normal;">
                 @lang('messages.menu.siapa_kami')</h1>
-            <p class="mt-4 px-12 text-center text-dark-200 md:px-36 aos-init aos-animate" data-aos="fade" style="font-family: __Libre_Baskerville_7a5e83, __Libre_Baskerville_Fallback_7a5e83; font-style: normal;">
+            <p class="mt-4 px-12 text-center text-dark-200 md:px-36 aos-init aos-animate" data-aos="fade" style="font-family: __Source_Sans_Pro_f20cbd, __Source_Sans_Pro_Fallback_f20cbd; font-style: normal;">
                 @lang('messages.siapa_kami.background_banner')</p>
         </div>
     </div>
@@ -19,13 +19,13 @@
             <div class="mx-auto flex max-w-2xl flex-col items-start justify-center py-10 text-center">
                 <h2 class="mx-auto text-3xl font-bold" style="font-family: __Libre_Baskerville_7a5e83, __Libre_Baskerville_Fallback_7a5e83; font-style: normal;">
                     Carbon and Environmental Research Indonesia (CER Indonesia)</h2><span class="mx-auto mt-3 w-full break-words" data-br=":r6:" data-brr="1" style="display: inline-block; vertical-align: top; text-decoration: inherit; max-width: 691px;">
-                    <p style="font-family: __Libre_Baskerville_7a5e83, __Libre_Baskerville_Fallback_7a5e83; font-style: normal;">@lang('messages.siapa_kami.heading')</p>
+                    <p>@lang('messages.siapa_kami.heading')</p>
                 </span>
             </div>
         </div>
     </section>
 </div>
-<div class="relative pb-10 md:pt-10" style="font-family: __Libre_Baskerville_7a5e83, __Libre_Baskerville_Fallback_7a5e83; font-style: normal;">
+<div class="relative pb-10 md:pt-10">
     <div class="sticky top-0 z-20 bg-white shadow-md">
         <div class="mx-auto flex w-full justify-evenly md:w-4/12">
             <a class="experts-link text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 w-full border-b-4 py-4 text-center border-b-4 border-primary-600 font-semibold text-primary-600" href="javascript:void(0)">
