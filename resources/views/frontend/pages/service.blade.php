@@ -8,7 +8,7 @@
         <div class="absolute flex h-full w-full flex-col items-center justify-center gap-4 bg-gradient-to-t from-black/50 to-black/50 text-white">
             <h1 class="px-6 text-center text-4xl font-bold text-white md:px-20 aos-init aos-animate" data-aos="fade" style="font-family: __Libre_Baskerville_7a5e83, __Libre_Baskerville_Fallback_7a5e83; font-style: normal;">
                 @lang('messages.menu.layanan_kami')</h1>
-            <p class="mt-4 px-12 text-center text-dark-200 md:px-36 aos-init aos-animate" data-aos="fade" style="font-family: __Source_Sans_Pro_f20cbd, __Source_Sans_Pro_Fallback_f20cbd; font-style: normal;">
+            <p class="mt-4 px-12 text-center text-dark-200 md:px-36 aos-init aos-animate" data-aos="fade" style="font-family: __Libre_Baskerville_7a5e83, __Libre_Baskerville_Fallback_7a5e83; font-style: normal;">
                 @lang('messages.layanan.background_banner')</p>
         </div>
     </div>
@@ -17,7 +17,7 @@
     <section id="our-services-detail" class="py-5 lg:py-8 md:px-10">
         <div class="mx-auto h-full max-w-7xl px-4">
             <div class="mx-auto flex max-w-4xl flex-col items-start justify-center pb-14 pt-14 text-center lg:pt-20">
-                <h2 class="mx-auto text-2xl font-bold" style="font-family: __Libre_Baskerville_7a5e83, __Libre_Baskerville_Fallback_7a5e83; font-style: normal;">
+                <h2 class="mx-auto text-2xl font-bold">
                     @lang('messages.layanan.title')</h2>
                 <p class="mt-8 text-center md:px-20 lg:mt-12">@lang('messages.layanan.background_banner')</p>
                 <section class="mt-4 grid grid-cols-1 gap-4 lg:mt-8 lg:grid-cols-2 lg:gap-8">
@@ -48,7 +48,7 @@
     <section id="map-of-projects" class="py-5 lg:py-8 md:px-md lg:px-lg">
         <div class="mx-auto h-full max-w-7xl px-4">
             <div class="mx-auto flex max-w-4xl flex-col items-start justify-center pb-10 pt-10 text-center lg:pb-20 aos-init aos-animate">
-                <h2 class="mx-auto text-2xl font-bold" style="font-family: __Libre_Baskerville_7a5e83, __Libre_Baskerville_Fallback_7a5e83; font-style: normal;">
+                <h2 class="mx-auto text-2xl font-bold">
                     @lang('messages.layanan.peta')</h2>
                 <div class="mt-6 w-full shadow">
                     <iframe width="100%" height="600" src="https://maps.mapifator.com/places/zciEKCGOu51t1ZUuQVk1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" align="center"></iframe>
@@ -60,7 +60,7 @@
 <section id="clients" class="py-5 lg:py-8 md:px-md lg:px-lg">
     <div class="mx-auto h-full max-w-7xl px-4">
         <div class="mx-auto flex max-w-4xl flex-col items-start justify-center pb-10 pt-10 text-center  lg:pb-20 lg:pt-20">
-            <h2 class="mx-auto text-2xl font-bold aos-init aos-animate" data-aos="zoom-in-up" style="font-family: __Libre_Baskerville_7a5e83, __Libre_Baskerville_Fallback_7a5e83; font-style: normal;">
+            <h2 class="mx-auto text-2xl font-bold aos-init aos-animate" data-aos="zoom-in-up">
                 @lang('messages.layanan.klien_kami')</h2>
             <div class="mt-6 w-full">
                 <div class="bg-dark-100s sticky top-0 z-20 bg-white shadow-b aos-init aos-animate" data-aos="zoom-in-up">
@@ -72,8 +72,8 @@
                 <section id="national-clients" class="-mt-12 pt-12">
                     <div class="-mt-12 pt-12">
                         <div class="flex flex-col items-start justify-center py-10">
-                            <h2 class="mr-auto text-xl font-bold md:mt-4 aos-init aos-animate" data-aos="slide-left" style="font-family: __Libre_Baskerville_7a5e83, __Libre_Baskerville_Fallback_7a5e83; font-style: normal;">
-                                @lang('messages.layanan.klien_kami')</h2>
+                            <h2 class="mr-auto text-xl font-bold md:mt-4 aos-init aos-animate" data-aos="slide-left">
+                                @lang('messages.layanan.klien_nasional')</h2>
                             <div class="mt-6 w-full space-y-12 md:mt-10">
                                 <div data-aos="zoom-in-up" class="aos-init aos-animate">
                                     <!-- First Swiper Row -->

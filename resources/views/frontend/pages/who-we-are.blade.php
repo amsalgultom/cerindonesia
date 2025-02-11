@@ -8,7 +8,7 @@
         <div class="absolute flex h-full w-full flex-col items-center justify-center gap-4 bg-gradient-to-t from-black/50 to-black/50 text-white">
             <h1 class="px-6 text-center text-4xl font-bold text-white md:px-20 aos-init aos-animate" data-aos="fade" style="font-family: __Libre_Baskerville_7a5e83, __Libre_Baskerville_Fallback_7a5e83; font-style: normal;">
                 @lang('messages.menu.siapa_kami')</h1>
-            <p class="mt-4 px-12 text-center text-dark-200 md:px-36 aos-init aos-animate" data-aos="fade" style="font-family: __Source_Sans_Pro_f20cbd, __Source_Sans_Pro_Fallback_f20cbd; font-style: normal;">
+            <p class="mt-4 px-12 text-center text-dark-200 md:px-36 aos-init aos-animate" data-aos="fade" style="font-family: __Libre_Baskerville_7a5e83, __Libre_Baskerville_Fallback_7a5e83; font-style: normal;">
                 @lang('messages.siapa_kami.background_banner')</p>
         </div>
     </div>
@@ -17,7 +17,7 @@
     <section id="about-us" class="py-5 lg:py-8 md:px-md lg:px-lg">
         <div class="mx-auto h-full max-w-7xl px-4">
             <div class="mx-auto flex max-w-2xl flex-col items-start justify-center py-10 text-center">
-                <h2 class="mx-auto text-3xl font-bold" style="font-family: __Libre_Baskerville_7a5e83, __Libre_Baskerville_Fallback_7a5e83; font-style: normal;">
+                <h2 class="mx-auto text-3xl font-bold">
                     Carbon and Environmental Research Indonesia (CER Indonesia)</h2><span class="mx-auto mt-3 w-full break-words" data-br=":r6:" data-brr="1" style="display: inline-block; vertical-align: top; text-decoration: inherit; max-width: 691px;">
                     <p>@lang('messages.siapa_kami.heading')</p>
                 </span>
@@ -40,7 +40,7 @@
         <div class="mx-auto h-full max-w-7xl px-4">
             <div class="mx-auto -mt-12 max-w-xl pt-12 lg:max-w-none">
                 <div class="flex flex-col items-start justify-center py-10 aos-init aos-animate" data-aos="zoom-in-up">
-                    <h2 class="text-2xl font-bold md:mt-4" style="font-family: __Libre_Baskerville_7a5e83, __Libre_Baskerville_Fallback_7a5e83; font-style: normal;">
+                    <h2 class="text-2xl font-bold md:mt-4">
                         @lang('messages.siapa_kami.tenaga_ahli')</h2>
                     <div class="mt-6 w-full md:mt-10">
                         <div class="flex flex-wrap justify-center">
@@ -78,7 +78,7 @@
         <div class="mx-auto h-full max-w-7xl px-4">
             <div class="mx-auto -mt-12 max-w-xl pt-12 lg:max-w-none">
                 <div class="flex flex-col items-start justify-center py-10 aos-init aos-animate" data-aos="zoom-in-up">
-                    <h2 class="text-2xl font-bold md:mt-4" style="font-family: __Libre_Baskerville_7a5e83, __Libre_Baskerville_Fallback_7a5e83; font-style: normal;">
+                    <h2 class="text-2xl font-bold md:mt-4">
                         @lang('messages.siapa_kami.tim_kami')</h2>
                     <div class="mt-6 w-full md:mt-10">
                         <div class="flex flex-wrap justify-center">
