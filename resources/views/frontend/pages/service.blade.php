@@ -73,7 +73,7 @@
                     <div class="-mt-12 pt-12">
                         <div class="flex flex-col items-start justify-center py-10">
                             <h2 class="mr-auto text-xl font-bold md:mt-4 aos-init aos-animate" data-aos="slide-left">
-                                @lang('messages.layanan.klien_nasional')</h2>
+                                @lang('messages.menu.klien_nasional')</h2>
                             <div class="mt-6 w-full space-y-12 md:mt-10">
                                 <div data-aos="zoom-in-up" class="aos-init aos-animate">
                                     <!-- First Swiper Row -->
