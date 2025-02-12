@@ -6,9 +6,9 @@
 <section class="aspect-3/4 h-128 w-full md:aspect-4/3">
     <div class="relative h-full bg-red-200"><img alt="@lang('messages.menu.hubungi_kami')" loading="eager" decoding="async" data-nimg="fill" class="object-cover" sizes="100vw" src="{{ asset('images/IMG_20211114_111659.jpg') }}" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;">
         <div class="absolute flex h-full w-full flex-col items-center justify-center gap-4 bg-gradient-to-t from-black/50 to-black/50 text-white">
-            <h1 class="px-6 text-center text-4xl font-bold text-white md:px-20 aos-init aos-animate" data-aos="fade" style="font-family: __Libre_Baskerville_7a5e83, __Libre_Baskerville_Fallback_7a5e83; font-style: normal;">
+            <h1 class="px-6 text-center text-4xl font-bold text-white md:px-20 aos-init aos-animate" data-aos="fade">
                 @lang('messages.menu.hubungi_kami')</h1>
-            <p class="mt-4 px-12 text-center text-dark-200 md:px-36 aos-init aos-animate" data-aos="fade" style="font-family: __Libre_Baskerville_7a5e83, __Libre_Baskerville_Fallback_7a5e83; font-style: normal;">
+            <p class="mt-4 px-12 text-center text-dark-200 md:px-36 aos-init aos-animate" data-aos="fade">
                 @lang('messages.hubungi_kami.background_banner')</p>
         </div>
     </div>

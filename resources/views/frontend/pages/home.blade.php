@@ -42,7 +42,7 @@
         <div class="mx-auto h-full max-w-7xl px-4">
             <div class="flex h-full flex-col items-center justify-center py-14 text-center aos-init aos-animate" data-aos="slide-up">
                 <h2 class="text-3xl font-bold">
-                    Carbon And Environmental Research Indonesia</h2>
+                    Carbon and Environmental Research Indonesia</h2>
                 <p class="mt-4 text-center"> @lang('messages.cerindo_info_beranda')</p>
                 <div class="mt-4"><a class="text-base text-dark-400 outline-none transition-all duration-200 hover:text-primary-500 inline-flex h-10 items-center justify-between gap-1 bg-primary-500 px-4 text-sm font-semibold tracking-wide text-white hover:bg-primary-600 hover:text-white" href="{{ route('who-we-are', ['lang' => app()->getLocale()]) }}">@lang('messages.selengkapnya')
                         <!-- --> <span aria-hidden="true">→</span></a></div>
@@ -61,7 +61,7 @@
         <div class="mx-auto h-full max-w-7xl px-4">
             <div class="items-centesr mx-auto flex max-w-3xl flex-col justify-center py-14">
                 <h2 class="text-center text-3xl font-bold">
-                    Carbon And Environmental Research Indonesia</h2>
+                    Carbon and Environmental Research Indonesia</h2>
                 <p class="mt-4 text-center md:px-20">@lang('messages.info_layanan_beranda')</p>
                 <section class="mt-8 grid grid-cols-1 gap-x-12 gap-y-8 md:grid-cols-2">
 

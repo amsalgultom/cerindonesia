@@ -6,9 +6,9 @@
 <section class="aspect-3/4 h-128 w-full md:aspect-4/3">
     <div class="relative h-full bg-red-200"><img alt="@lang('messages.menu.layanan_kami')" loading="eager" decoding="async" data-nimg="fill" class="object-cover" sizes="100vw" src="{{ asset('images/IMG_20211114_111659.jpg') }}" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;">
         <div class="absolute flex h-full w-full flex-col items-center justify-center gap-4 bg-gradient-to-t from-black/50 to-black/50 text-white">
-            <h1 class="px-6 text-center text-4xl font-bold text-white md:px-20 aos-init aos-animate" data-aos="fade" style="font-family: __Libre_Baskerville_7a5e83, __Libre_Baskerville_Fallback_7a5e83; font-style: normal;">
+            <h1 class="px-6 text-center text-4xl font-bold text-white md:px-20 aos-init aos-animate" data-aos="fade">
                 @lang('messages.menu.layanan_kami')</h1>
-            <p class="mt-4 px-12 text-center text-dark-200 md:px-36 aos-init aos-animate" data-aos="fade" style="font-family: __Libre_Baskerville_7a5e83, __Libre_Baskerville_Fallback_7a5e83; font-style: normal;">
+            <p class="mt-4 px-12 text-center text-dark-200 md:px-36 aos-init aos-animate" data-aos="fade">
                 @lang('messages.layanan.background_banner')</p>
         </div>
     </div>
@@ -117,7 +117,7 @@
                 <section id="international-clients" class="-mt-12 pt-12">
                     <div class="-mt-12 pt-12">
                         <div class="flex flex-col items-start justify-center py-10">
-                            <h2 class="ml-auto text-xl font-bold md:mt-4 aos-init aos-animate" data-aos="slide-right" style="font-family: __Libre_Baskerville_7a5e83, __Libre_Baskerville_Fallback_7a5e83; font-style: normal;">
+                            <h2 class="ml-auto text-xl font-bold md:mt-4 aos-init aos-animate" data-aos="slide-right">
                                 @lang('messages.menu.klien_internasional')</h2>
                             <div class="mt-6 w-full space-y-12 md:mt-10">
                                 <div data-aos="zoom-in-up" class="aos-init aos-animate">
